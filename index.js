@@ -4,7 +4,7 @@ const fs = require('fs');
 //to define it is using discord.js
 const Discord = require('discord.js');
 //import prefix and token from config.json
-const prefix = require('./config.json');
+const prefix = '??'
 
 //create a new Client named bot
 const bot = new Discord.Client();
