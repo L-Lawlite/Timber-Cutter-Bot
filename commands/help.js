@@ -44,7 +44,7 @@ module.exports = {
 
 		data.push(`**Cooldown:** ${command.cooldown || 3} second(s)`);
 
-		const helpEmbed = new Discord.MessageEmbed();
+		
 		helpEmbed.setDescription(data.join(`\n`));
 
 		message.channel.send(helpEmbed, { split: true });
