@@ -1,4 +1,5 @@
 const { prefix } = require('../config.json');
+const Discord = require('discord.js');
 
 module.exports = {
 	name: 'help',
@@ -44,7 +45,7 @@ module.exports = {
 
 		data.push(`**Cooldown:** ${command.cooldown || 3} second(s)`);
 
-		
+
 		helpEmbed.setDescription(data.join(`\n`));
 
 		message.channel.send(helpEmbed, { split: true });
