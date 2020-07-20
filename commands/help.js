@@ -15,7 +15,10 @@ module.exports = {
 			data.push(commands.map(command => command.name).join(', '));
 			data.push(`\nYou can send \`${prefix}help [command name]\` to get info on a specific command!`);
 
-			return message.author.send(data, { split: true })
+			const helpEmbed = new Discord.MessageEmbed();
+			helpEmbed.setDescription(data.join(`\n`));
+
+			return message.author.send(helpEmbed, { split: true })
 				.then(() => {
 					if (message.channel.type === 'dm') return;
 					message.reply('I\'ve sent you a DM with all my commands!');
