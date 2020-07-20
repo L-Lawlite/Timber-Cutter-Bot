@@ -88,7 +88,7 @@ bot.on('message', message => {
 
   //for all command execution
   try {
-	   command.execute(message,args);
+	   command.execute(embed,args);
    }
    catch (error) {
 	     console.error(error);
