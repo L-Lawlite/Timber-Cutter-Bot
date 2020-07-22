@@ -18,7 +18,7 @@ module.exports = {
 			data.push(`\nYou can send \`${prefix}help [command name]\` to get info on a specific command!`);
 
 
-			helpEmbed.setDescription(data.join(`\n`));
+			helpEmbed.setDescription(data.join());
 
 			return message.author.send(helpEmbed)
 				.then(() => {
@@ -47,7 +47,7 @@ module.exports = {
 		data.push(`**Cooldown:** ${command.cooldown || 3} second(s)`);
 
 
-		helpEmbed.setDescription(data.join(`\n`));
+		helpEmbed.setDescription(data.join());
 
 		message.channel.send(helpEmbed);
 	},
