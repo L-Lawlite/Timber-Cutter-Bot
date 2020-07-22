@@ -32,9 +32,8 @@ const cooldowns = new Discord.Collection();
 
 
 bot.on('message', message => {
-  //checks if message has prefix or not if not the program is terminated
-  //also checks	if message is send by this bot if yes terminate the program
-	if (!message.content.startsWith(prefix) || message.author.bot) return;
+  //checks	if message is send by this bot if yes terminate the program
+	if (message.author.bot) return;
 
   //loads the command after removing prefix
 	const args = message.content.slice(prefix.length).trim().split(/ +/);
