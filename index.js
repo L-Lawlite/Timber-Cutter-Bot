@@ -35,6 +35,8 @@ bot.on('message', message => {
   //checks	if message is send by this bot if yes terminate the program
 	if (message.author.bot) return;
 
+
+
   //loads the command after removing prefix
 	const args = message.content.slice(prefix.length).trim().split(/ +/);
 	const commandName = args.shift().toLowerCase();
@@ -42,6 +44,11 @@ bot.on('message', message => {
   //checks if that command or its alias exist
   const command = bot.commands.get(commandName)
   		|| bot.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName));
+
+  //open close channel
+  if(message.channel.name == `open-help`)
+    message.channel.setName(`busy-help`)
+      .catch(console.error());
 
   //if not terminate the program
   if (!command) return;
