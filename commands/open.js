@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 
 
-module.exports{
+module.exports = {
   name: 'open',
 	description: 'Opens channel',
 	execute(message, args) {
