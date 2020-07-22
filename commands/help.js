@@ -18,9 +18,9 @@ module.exports = {
 			data.push(`\nYou can send \`${prefix}help [command name]\` to get info on a specific command!`);
 
 
-			helpEmbed.setDescription(data.join(`\n`));
+			helpEmbed.setDescription(data.join());
 
-			return message.author.send(helpEmbed, { split: true })
+			return message.author.send(helpEmbed)
 				.then(() => {
 					if (message.channel.type === 'dm') return;
 					message.reply('I\'ve sent you a DM with all my commands!');
