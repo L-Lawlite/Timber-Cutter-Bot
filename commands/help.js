@@ -17,7 +17,7 @@ module.exports = {
 			data.push(commands.map(command => command.name && command.description).join('\n'));
 
 			helpEmbed.setDescription(data.join())
-				.setFooter('You can send \`${prefix}help [command name]\` to get info on a specific command!');
+				.setFooter(`You can send \`${prefix}help [command name]\` to get info on a specific command!`);
 
 			return message.author.send(helpEmbed)
 				.then(() => {
