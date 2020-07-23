@@ -20,7 +20,7 @@ module.exports = {
 			for(var i = 0; i < desc.length; i++){
 					var commandName = commands.map(command => command.name);
 					for(var a = 0; a < comma.length; a++){
-						data.push(commandName[a]+'\n'+desc[i]);
+						data.push(commandName[a],'\n',desc[i]);
 
 						}
 					}
