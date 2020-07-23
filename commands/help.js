@@ -19,9 +19,8 @@ module.exports = {
 			var desc = commands.map(cmd => cmd.description)
 			for(var i = 0; i < desc.length; i++){
 					var commandName = commands.map(command => command.name);
-					for(var a = 0; a < commandName.length; a++){
-						data.push(commandName[a].join('\n'));
-						data.push(desc[i].join('\n\n'));
+					for(var a = 0; a < comma.length; a++){
+						data.push(commandName[a]+'\n'+desc[i]);
 
 						}
 					}
