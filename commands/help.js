@@ -14,8 +14,8 @@ module.exports = {
 
 		if (!args.length) {
 			helpEmbed.setTitle('Here\'s a list of all my commands:\n');
-			var commandName = command.map(command.name);
-			var desc = command.map(command.description);
+			var commandName = command.map(command =>	command.name);
+			var desc = command.map(command => command.description);
 			for(var i=0; i<commandName.length; i++){
 				helpEmbed.addFields(
 					{ name: commandName[i] , value: desc[i], inline: true},
