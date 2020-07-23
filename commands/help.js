@@ -18,7 +18,7 @@ module.exports = {
 			var desc = commands.map(command => command.description);
 			for(var i=0; i<commandName.length || i < 25; i++){
 				helpEmbed.addFields(
-					{ name: commandName[i] , value1: desc[i]}
+					{ name: commandName[i] , value1: desc[i],inline: false}
 
 				)
 			}
