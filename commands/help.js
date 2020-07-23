@@ -20,10 +20,10 @@ module.exports = {
 			for(var i = 0; i < desc.length; i++){
 					var name = commands.map(command => command.name);
 					for(var a = 0; a < name.length; a++){
-						data.push(name[a]\ndesc[i])
+						data.push(name[a]\ndesc[i]);
 						}
 					}
-					
+
 			helpEmbed.setDescription(data.join())
 				.setFooter('You can send \`${prefix}help [command name]\` to get info on a specific command!');
 
