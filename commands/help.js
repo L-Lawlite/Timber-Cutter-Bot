@@ -18,9 +18,8 @@ module.exports = {
 			var desc = commands.map(command => command.description);
 			for(var i=0; i<commandName.length; i++){
 				helpEmbed.addFields(
-					{ name: commandName[i] , value: desc[i], inline: true}
+					{ name: commandName[i] , value: desc[i] + `\n\u200B`, inline: true}
 				)
-					.setDescription('\n');
 			}
 
 			helpEmbed.setFooter(`You can send \`${prefix}help [command name]\` to get info on a specific command!`);
