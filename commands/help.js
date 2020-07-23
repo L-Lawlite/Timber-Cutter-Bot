@@ -19,7 +19,7 @@ module.exports = {
 			for(var i=0; i<commandName.length; i++){
 				helpEmbed.addFields(
 					{ name: commandName[i] , value: desc[i], inline: true},
-					{ name: '\n', value: '\n' }
+					{ name: '\u200B', value: '\u200B' }
 				)
 			}
 
