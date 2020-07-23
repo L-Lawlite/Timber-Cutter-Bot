@@ -21,7 +21,7 @@ module.exports = {
 					{ name: commandName[i] , value1: desc[i], inline: true}
 
 				)
-					.addBlackField(true);
+					helpEmbed.addBlackField(true);
 			}
 
 			helpEmbed.setFooter(`You can send \`${prefix}help [command name]\` to get info on a specific command!`);
