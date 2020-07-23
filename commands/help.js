@@ -13,9 +13,17 @@ module.exports = {
 		const helpEmbed = new Discord.MessageEmbed();
 
 		if (!args.length) {
-			data.push('Here\'s a list of all my commands:\n');
+/*			data.push('Here\'s a list of all my commands:\n');
 			data.push(commands.map(command => command.name && command.description).join('\n'));
-
+*/
+			var desc = commands.map(cmd => cmd.description)
+			for(var i = 0; i < desc.length; i++){
+					var name = commands.map(command => command.name);
+					for(var a = 0; a < name.length; a++){
+						data.push(name[a]\ndesc[i])
+						}
+					}
+					
 			helpEmbed.setDescription(data.join())
 				.setFooter('You can send \`${prefix}help [command name]\` to get info on a specific command!');
 
