@@ -16,12 +16,8 @@ module.exports = {
 			helpEmbed.setTitle('Here\'s a list of all my commands:\n');
 			var commandName = commands.map(command => command.name);
 			var desc = commands.map(command => command.description);
-			for(var i=0; i<commandName.length; i++){
-				helpEmbed.addFields(
-					{ name: commandName[i] , value: desc[i], inline: true},
-					{ name: '\u200B', value: '\u200B' }
-				)
-			}
+			for(var i=0; i<commandName.length; i++)
+				helpEmbed.addFields(commandName[i],desc[i],true);
 
 			helpEmbed.setFooter(`You can send \`${prefix}help [command name]\` to get info on a specific command!`);
 
