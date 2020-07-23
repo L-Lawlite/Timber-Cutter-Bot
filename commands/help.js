@@ -14,8 +14,7 @@ module.exports = {
 
 		if (!args.length) {
 			data.push('Here\'s a list of all my commands:\n');
-			data.push(commands.map(command => command.name).join('\n'));
-			data.push(commands.map(command => command.description).join('\n\n'));
+			data.push(commands.map(command => command.name && command.description).join('\n'));
 
 			helpEmbed.setDescription(data.join())
 				.setFooter('You can send \`${prefix}help [command name]\` to get info on a specific command!');
