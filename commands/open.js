@@ -13,5 +13,8 @@ module.exports = {
         message.channel.send(openEmbed);
         message.channel.setName(`open-help`);
       }
+      else{
+        message.reply('u can\'t use it right now');
+      }
 	},
 };

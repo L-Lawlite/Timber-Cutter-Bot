@@ -10,8 +10,8 @@ module.exports = {
       description: {
         name: 'click here!',
         url: 'https://discord.com/oauth2/authorize?client_id=728842617705726026&scope=bot&permissions=8'
-      }
-    }
+      },
+    };
     message.channel.send(Embed);
 	},
 };
