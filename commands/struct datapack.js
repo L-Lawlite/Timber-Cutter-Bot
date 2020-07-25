@@ -3,6 +3,7 @@ module.exports = {
 	description: 'Shows Datapack Structure for 1.16',
   aliases: ['datapack'],
 	execute(message, args) {
-		message.channel.send('');
+		message.channel.send(""
+		"");
 	},
 };
