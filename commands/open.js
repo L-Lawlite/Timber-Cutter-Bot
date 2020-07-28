@@ -3,6 +3,7 @@ const Discord = require('discord.js');
 module.exports = {
   name: 'open',
 	description: 'Opens channel',
+  guildOnly: true,
 	execute(message, args) {
 		const openEmbed = new Discord.MessageEmbed()
       .setColor('#0099ff')
