@@ -9,9 +9,9 @@ module.exports = {
       .setTitle('**Minecraft Help Channel**')
       .setDescription('Feel free to ask for help or advice on data packs, resource packs, or anything else related to Minecraft');
 
-      if(message.channel.name == `busy-help`){
+      if(message.channel.name == `⏳busy-help`){
         message.channel.send(openEmbed);
-        message.channel.setName(`open-help`);
+        message.channel.setName(`🔑open-help`);
       }
       else{
         message.reply('u can\'t use it right now');

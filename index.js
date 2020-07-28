@@ -47,10 +47,11 @@ bot.on('message', message => {
   		|| bot.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName));
 
   //open close channel
-  if(message.channel.name == `open-help`)
-    message.channel.setName(`busy-help`)
+  if(message.channel.name == `🔑open-help`)
+    message.channel.setName(`⏳busy-help`)
       .catch(console.error());
 
+  if(!message.content.startWith(prefix)) return;
   //if not terminate the program
   if (!command) return;
 
