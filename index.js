@@ -51,7 +51,7 @@ bot.on('message', message => {
     message.channel.setName(`⏳busy-help`)
       .catch(console.error());
 
-  if(!message.content.startWith(prefix)) return;
+  if(!message.content.startsWith(prefix)) return;
   //if not terminate the program
   if (!command) return;
 
