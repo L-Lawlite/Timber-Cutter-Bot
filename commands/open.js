@@ -18,7 +18,7 @@ module.exports = {
           name:'**Give properly**:',
           value:`1.What are you trying to do?\n2.What have you tried (Send the commands and such)\n3. What's the problem, is it invalid, or does it just not do what you want it to do?\n4. What does log say (Optional, unless the Helper asks for it)`
         }
-      )
+      ),
       .setFooter(`for more details [read this](https://sol.gfxile.net/dontask.html)`);
 
       if(message.channel.name == `⏳busy-help`){
