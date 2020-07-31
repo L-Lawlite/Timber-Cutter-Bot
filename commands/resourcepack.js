@@ -1,6 +1,6 @@
 const fs = require('fs');
 module.exports = {
-	name: 'code',
+	name: 'resourcepack',
 	description: 'Shows Resource Pack Structure for 1.16',
 	execute(message, args) {
 		fs.readFile('./commands/txt/resourcepack_format.txt','utf8',function(err,data){
