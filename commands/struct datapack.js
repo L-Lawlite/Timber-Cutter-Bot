@@ -6,7 +6,7 @@ module.exports = {
 	execute(message, args) {
 		fs.readFile('./commands/datapack_format.txt','utf8',function(err,data){
 			if(err) console.log(err);
-			message.content.send(data);
+			message.channel.send(data);
 		});
 	},
 };
