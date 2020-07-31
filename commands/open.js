@@ -23,7 +23,7 @@ module.exports = {
 
       if(message.channel.name == `⏳busy-help`){
         message.channel.send(openEmbed);
-        message.channel.setName(`🔑open-help`);
+        message.channel.setName(`🔑open-help`).catch(error);
       }
       else{
         message.reply('u can\'t use it right now');
