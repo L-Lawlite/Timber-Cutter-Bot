@@ -5,7 +5,7 @@ module.exports = {
   aliases: ['datapack'],
 	execute(message, args) {
 		fs.readFile('datapack_format.txt','utf8',function(err,data){
-			if(err) throw err;
+			if(err) console.log(err);
 			message.content.send(data);
 		});
 	},
