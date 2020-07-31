@@ -1,0 +1,21 @@
+When putting commands (and other code, like json) in Discord, it's wise to put them in code blocks. This makes the command easier to read and stops Discord from removing special characters (like\\). Here are some examples of code blocks:
+
+**Inline code block**
+\`example\`
+`example`
+
+**Multi-line code block**
+\`\`\`example\`\`\`
+```example```
+
+**Multi-line code block with language syntax highlighting**
+\`\`\`json
+{
+    "example": true
+}
+\`\`\`
+```json
+ {
+      "example": true
+ }
+ ```
