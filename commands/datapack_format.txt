@@ -1,0 +1,23 @@
+📂 <world_save>
+    📂 datapacks
+        📂 <data_pack>
+            📜 pack.mcmeta
+            📂 data
+                📂 <namespace>
+                    📂 advancements
+                    📂 loot_tables
+                    📂 functions
+                    📂 predicates
+                    📂 recipes
+                    📂 structures
+                    📂 tags
+                        📂 blocks
+                        📂 entity_types
+                        📂 fluids
+                        📂 functions
+                        📂 items
+                📂 minecraft
+                    📂 tags
+                        📂 functions
+                              📄 load.json
+                              📄 tick.json
