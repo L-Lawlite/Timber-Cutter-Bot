@@ -6,7 +6,9 @@ When putting commands (and other code, like json) in Discord, it's wise to put t
 
 **Multi-line code block**
 \`\`\`example\`\`\`
-```example```
+```
+example
+```
 
 **Multi-line code block with language syntax highlighting**
 \`\`\`json
