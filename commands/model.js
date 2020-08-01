@@ -22,7 +22,7 @@ module.exports = {
            },
            {
              name:'2. ALL files (except the main data pack folder) have no uppercase and no spaces.',
-             value:'\ub002'
+             value:'\u200B'
            },
            {
              name:'Your resource pack is properly loaded into the game.',
@@ -34,27 +34,27 @@ module.exports = {
            },
            {
              name:'5.Make sure all angles are -45/-22.5/0/22.5/45',
-             value:'\ub002'
+             value:'\u200B'
            },
            {
              name:'6. Use a 6 digit custom model data number, and increase the number(Ex. 000001 will not work)',
-             value:'\ub002'
+             value:'\u200B'
            },
            {
              name:'7.Make sure ALL surfaces of ALL the cubes in the model have a texture on it, even if you can\'t see that side of the cube. (Or else the texture will be labeled as missing)',
-             value:'\ub002'
+             value:'\u200B'
            },
            {
              name:'8. If there are multiple custom model datas/predicates in the item json file, make sure there is a comma after each predicate line after the last curly brace EXCEPT the last predicate line.',
-             value:'\ub002'
+             value:'\u200B'
            },
            {
              name:'9. If multiple custom model datas are present, make sure they go in increasing numerical order from top to bottom of the file.',
-             value:'\ub002'
+             value:'\u200B'
            },
            {
              name:'10. Make sure that you are using a .json model. If it’s a bbmodel, go to file—> export—> blockmodel and it should say saved as a .json file.',
-             value:'\ub002'
+             value:'\u200B'
            }
          );
          message.channel.send(embed);
