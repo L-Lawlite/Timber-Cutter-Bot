@@ -13,7 +13,7 @@ module.exports = {
     const name = args[0].toLowerCase();
     switch (name) {
       case 'error':
-        embed.setDescription('If you have an error in your 3D Minecraft model, Check:\n\n')
+        embed.setDescription('If you have an error in your 3D Minecraft model, Check:\u200B')
          .setColor('#0099ff')
          .addFields(
            {
@@ -25,7 +25,7 @@ module.exports = {
              value:'\u200B'
            },
            {
-             name:'Your resource pack is properly loaded into the game.',
+             name:'3. Your resource pack is properly loaded into the game.',
              value: ' -Pack.mcmeta pack format number of 4 before 1.15, 5 for 1.15, 6 for 1.16'
            },
            {
