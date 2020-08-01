@@ -13,7 +13,7 @@ module.exports = {
     const name = args[0].toLowerCase();
     switch (name) {
       case 'error':
-        embed.setDescription('If you have an error in your 3D Minecraft model, Check:')
+        embed.setDescription('If you have an error in your 3D Minecraft model, Check:\n\n')
          .setColor('#0099ff')
          .addFields(
            {
