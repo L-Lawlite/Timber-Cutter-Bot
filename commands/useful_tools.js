@@ -7,7 +7,7 @@ module.exports = {
       .setDescription('Here are some useful tools for datapack creating:\n  WEBSITES: ')
       .addFields(
         {
-          name:`[mcstacker.net](https://mcstacker.net/)`,
+          name:"[mcstacker.net](https://mcstacker.net/)",
           value:`Most useful command generator - \`/execute\`,\`/summon\`,\`/give\` etc. `
         }
       );
