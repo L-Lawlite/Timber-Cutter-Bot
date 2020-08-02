@@ -50,7 +50,11 @@ bot.on('message', message => {
   if(message.channel.name == `🔑open-help`)
     message.channel.setName(`⏳busy-help`)
       .catch(console.error());
-
+  if(message.channel.name == `⏳busy-help` && message.content.startsWith('mcstacker'))
+  {
+    message.content.send('https://mcstacker.net/');
+  }
+  
   if(!message.content.startsWith(prefix)) return;
   //if not terminate the program
   if (!command) return;
