@@ -57,11 +57,12 @@ module.exports = {
              value:'\u200B'
            }
          );
-         message.channel.send(embed);
+
         break;
       default:
 
     }
 
+    message.channel.send(embed);
   },
 };
