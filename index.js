@@ -52,7 +52,7 @@ bot.on('message', message => {
       .catch(console.error());
   if(message.channel.name == `⏳busy-help` && message.content.startsWith(`mcstacker`))
   {
-    message.content.send('https://mcstacker.net/');
+    message.content.send(`https://mcstacker.net/`);
   }
 
   if(!message.content.startsWith(prefix)) return;
