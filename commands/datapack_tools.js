@@ -14,6 +14,14 @@ module.exports = {
        {
          name:`Custom Recipe for Crafting Table, Furnace , Blast Furnace, Smoker, Stone Cutter and Smithing Table\n[Note:All this does\'t include items with nbt data]`,
          value:`[Recipe Generator](https://crafting.thedestruc7i0n.ca/)`
+       },
+       {
+         name:`Loot Table Generator (both are good use on your personal preference)`,
+         value:`[Misode](https://misode.github.io/loot-table/)\n[mcstacker.net](https://mcstacker.net/)`,
+       },
+       {
+         name:`Browse gamefiles and get the default loot tables, Advancement etc.`,
+         value:`[MC Cloud](https://mcasset.cloud/)`
        }
 
      );
