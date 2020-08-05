@@ -22,6 +22,22 @@ module.exports = {
        {
          name:`Browse gamefiles and get the default loot tables, Advancement etc.`,
          value:`[MC Cloud](https://mcasset.cloud/)`
+       },
+       {
+         name:`Tellraw, Title, Sign and Book Generator`,
+         value:`[Minecraft json](https://minecraftjson.com/)\n[mcstacker.net](https://mcstacker.net/)\n[Minecraft Tools](https://minecraft.tools/en/)`
+       },
+       {
+         name:`Lot of Asthetic and useful tools`,
+         value:`[Minecraft Tools](https://minecraft.tools/en/)`
+       },
+       {
+         name:`Predicate Generator`,
+         value:`[Predicate Generator](https://misode.github.io/)`
+       },
+       {
+         name:`Advancement Generator`,
+         value:`[Advancement Generator](https://advancements.thedestruc7i0n.ca/)`
        }
 
      );
