@@ -33,11 +33,15 @@ module.exports = {
        },
        {
          name:`Predicate Generator`,
-         value:`[Predicate Generator](https://misode.github.io/)`
+         value:`[Predicate Generator](https://misode.github.io/predicate/)`
        },
        {
          name:`Advancement Generator`,
-         value:`[Advancement Generator](https://advancements.thedestruc7i0n.ca/)`
+         value:`[Advancement Generator](https://misode.github.io/advancement/)`
+       },
+       {
+         name:`World setting Generator (Note:Can also be used for Custom Dimensions with little editing)`,
+         value:`[World Generator](https://misode.github.io/worldgen/)`
        }
 
      );
