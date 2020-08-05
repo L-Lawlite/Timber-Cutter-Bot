@@ -21,7 +21,7 @@ module.exports = {
          value:`[Lots of Player Heads](https://minecraft-heads.com/ )`
        },
        {
-         name:`Browse gamefiles and get the default loot tables, Advancement etc.`,
+         name:`Browse gamefiles and get the default model json files etc`,
          value:`[MC Cloud](https://mcasset.cloud/)`
        }
      );
