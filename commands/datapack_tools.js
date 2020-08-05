@@ -40,8 +40,12 @@ module.exports = {
          value:`[Advancement Generator](https://misode.github.io/advancement/)`
        },
        {
-         name:`World setting Generator (Note:Can also be used for Custom Dimensions with little editing)`,
+         name:`World setting Generator (Note: Can also be used for Custom Dimensions with little editing)`,
          value:`[World Generator](https://misode.github.io/worldgen/)`
+       },
+       {
+         name:`Particle Generator`,
+         value:`[Particle Plots](https://cloudwolfyt.github.io/pages/gens/particle-plots.html)`
        }
 
      );
