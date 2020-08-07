@@ -1,7 +1,7 @@
 const { prefix } = require('../config.json');
 const Discord = require('discord.js');
 const fs = require('fs');
-bot.commands = new Discord.Collection();
+const { commands } = message.client;
 const videoFiles = fs.readdirSync('./commands/video').filter(file => file.endsWith('.js'));
 
 module.exports = {
