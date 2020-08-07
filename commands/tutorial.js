@@ -1,8 +1,7 @@
 const { prefix } = require('../config.json');
 const Discord = require('discord.js');
 const fs = require('fs');
-const { commands } = message.client;
-const videoFiles = fs.readdirSync('./commands/video').filter(file => file.endsWith('.js'));
+
 
 module.exports = {
 	name: 'tutorial',
@@ -10,6 +9,9 @@ module.exports = {
 	aliases: ['tut'],
 	usage: '[Video Topic]',
 	execute(message, args) {
+
+    const { commands } = message.client;
+    const videoFiles = fs.readdirSync('./commands/video').filter(file => file.endsWith('.js'));
 
     for (const file of videoFiles) {
     	const command = require(`./commands/video/${file}`);
