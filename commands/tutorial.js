@@ -10,10 +10,13 @@ module.exports = {
 	usage: '[Video Topic]',
 	execute(message, args) {
 
-    const { commands } = message.client;
+    const commands = new Discord.Collection();
     const videoFiles = fs.readdirSync('./commands/video').filter(file => file.endsWith('.js'));
 
-
+    for (const file of videoFiles) {
+    	const command = require(`./commands/video/${file}`);
+    	bot.commands.set(command.name, command);
+    }
 
     const embed = new Discord.MessageEmbed();
 
