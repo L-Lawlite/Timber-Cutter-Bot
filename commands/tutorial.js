@@ -11,7 +11,7 @@ module.exports = {
 	execute(message, args) {
 
     const { commands } = message.client;
-    const videoFiles = fs.readdirSync('./video').filter(file => file.endsWith('.js'));
+    const videoFiles = fs.readdirSync('./commands/video').filter(file => file.endsWith('.js'));
 
     for (const file of videoFiles) {
     	const command = require(`./commands/video/${file}`);
