@@ -15,7 +15,7 @@ module.exports = {
 
     for (const file of videoFiles) {
     	const command = require(`./commands/video/${file}`);
-    	bot.commands.set(command.name, command);
+    	commands.set(command.name, command);
     }
 
     const embed = new Discord.MessageEmbed();
