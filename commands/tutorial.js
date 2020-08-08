@@ -21,6 +21,9 @@ module.exports = {
 				message.channel.send(`https://youtu.be/ASVpGeLf_HU`);
 				message.channel.send('https://youtu.be/fGlJpli5cYc');
 				break;
+			case 'unicode':
+
+				break;
 			default:
 
 		}
