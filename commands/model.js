@@ -8,7 +8,6 @@ module.exports = {
   usage: 'error/help',
   cooldown: 10,
   execute(message, args){
-    const { models } = message.client;
     const embed = new Discord.MessageEmbed();
 
     const name = args[0].toLowerCase();
