@@ -9,7 +9,7 @@ module.exports = {
 		var videos = require("./video/videos.json")
 
 		for(i = 0; i < videos.length; i++)
-		for(j=0;j< videos.name.length;j++)
+		for(j=0;j< videos[i].name.length;j++)
 			if(choice === videos[i].name[j]){
 				message.channel.send(videos[i].url)
 			}
