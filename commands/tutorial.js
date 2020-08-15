@@ -6,7 +6,7 @@ module.exports = {
 	args:true,
 	execute(message, args) {
 		const choice = args[0].toLowerCase();
-		var { videos } = require("./commands/video/videos.json")
+		var { videos } = require("./videos.json")
 
 		for(i = 0; i < videos.length; i++)
 		for(j=0;j< videos.name.length;j++)
