@@ -1,12 +1,20 @@
 module.exports = {
 	name: 'tutorial',
 	description: 'Links Video Tutorial',
-	aliases: ['tut'],
+	aliases: ['tut','video'],
 	usage: '[Video Topic]',
 	args:true,
 	execute(message, args) {
 		const choice = args[0].toLowerCase();
-		switch (choice) {
+		var videos = require("./commands/video/videos.json")
+
+		for(i = 0; i < videos.length; i++)
+		for(j=0;j< videos.name.length;j++)
+			if(choice === videos[i].name[j]){
+				message.channel.send(videos[i].url)
+			}
+
+/*		switch (choice) {
 			case 'troubleshoot':
 			case 't':
 				message.channel.send('https://www.youtube.com/watch?v=L79L2qaH3Mw');
@@ -31,6 +39,6 @@ module.exports = {
 				break;
 			default:
 
-		}
+		}*/
 	},
 };
