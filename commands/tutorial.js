@@ -10,9 +10,13 @@ module.exports = {
 
 		for(i = 0; i < videos.length; i++)
 		for(j=0;j< videos[i].name.length;j++)
-			if(choice === videos[i].name[j]){
-				message.channel.send(videos[i].url)
+			{
+				console.log(video[i].name[j]);
+				if(choice === videos[i].name[j]){
+
+					message.channel.send(videos[i].url)
 			}
+		}
 
 /*		switch (choice) {
 			case 'troubleshoot':
