@@ -47,7 +47,7 @@ bot.on('message', message => {
   		|| bot.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName));
 
   //open close channel
-  if(message.channel.name == `🔑open-help`)
+  if(message.channel.name == `🔑available-help`)
     message.channel.setName(`⏳busy-help`)
       .catch(console.error());
 /*  if(message.channel.name == `⏳busy-help` && message.content.startsWith(`mcstacker`))
