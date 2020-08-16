@@ -1,9 +1,10 @@
+const Discord = require('discord.js');
+
 module.exports = {
 	name: 'tutorial',
 	description: 'Links Video Tutorial',
 	aliases: ['tut','video'],
 	usage: '[Video Topic]',
-	args:true,
 	execute(message, args) {
 
 		const choice = args[0].toLowerCase();
@@ -11,15 +12,13 @@ module.exports = {
 		console.log("file running");
 		console.log(videos);
 		for(var i = 0; i < videos.length; i++)
-		{	console.log("phase 1 passesd");
 		for(var j=0;j< videos[i].name.length;j++)
+		{
+			if(choice === videos[i].name[j])
 			{
-				console.log("phase 2 passed");
-				console.log(videos[i].name[j]);
-				if(choice === videos[i].name[j]){
-					message.channel.send(videos[i].url)
+				message.channel.send(videos[i].url);
 			}
-		}}
+		}
 
 /*		switch (choice) {
 			case 'troubleshoot':
