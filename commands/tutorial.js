@@ -9,8 +9,6 @@ module.exports = {
 
 		if(!args.length)
 		{
-			const cmd = bot.commands
-
 			var helpDesc = []
 			cmd.forEach(command => {
 				helpDesc.push(`**${command.name}**`);
