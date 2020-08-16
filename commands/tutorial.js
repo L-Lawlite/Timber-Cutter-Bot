@@ -7,10 +7,10 @@ module.exports = {
 	usage: '[Video Topic]',
 	execute(message, args) {
 		var videos = require("./video/videos.json");
-		
+
 		if(!args.length)
 		{
-			var helpDesc = []
+			var helpDesc = [];
 			videos.forEach(v => {
 				helpDesc.push(v.name[0]);
 				helpDesc.push(v.description);
