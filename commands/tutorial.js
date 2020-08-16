@@ -9,7 +9,6 @@ module.exports = {
 
 		const choice = args[0].toLowerCase();
 		var videos = require("./video/videos.json");
-		console.log("file running");
 		console.log(videos);
 		for(var i = 0; i < videos.length; i++)
 		for(var j=0;j< videos[i].name.length;j++)
