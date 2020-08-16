@@ -100,7 +100,7 @@ bot.on('message', message => {
 
   //for all command execution
   try {
-	   command.execute(message,args,bot.command);
+	   command.execute(message,args,bot.commands);
    }
    catch (error) {
 	     console.error(error);
