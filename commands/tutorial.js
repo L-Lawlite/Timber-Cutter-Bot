@@ -5,6 +5,7 @@ module.exports = {
 	usage: '[Video Topic]',
 	args:true,
 	execute(message, args) {
+		console.log("file running");
 		const choice = args[0].toLowerCase();
 		var videos = require("./video/videos.json");
 
