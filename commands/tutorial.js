@@ -19,7 +19,7 @@ module.exports = {
 			const embed = new Discord.MessageEmbed();
 			embed.setTitle("Commands")
 			 .setDescription(helpDesc.join("\n"));
-			message.channel.send(embed);
+			return message.channel.send(embed);
 		}
 
 		const choice = args[0].toLowerCase();
