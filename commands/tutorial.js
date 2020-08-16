@@ -15,7 +15,7 @@ module.exports = {
 			cmd.forEach(command => {
 				helpDesc.push(`**${command.name}**`);
 				helpDesc.push(command.description);
-				helpDesc.push(“\n”);
+				helpDesc.push("\n");
 			})
 			const embed = new Discord.MessageEmbed();
 				.setTitle(“Videos”)
