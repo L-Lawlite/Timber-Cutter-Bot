@@ -5,10 +5,10 @@ module.exports = {
 	usage: '[Video Topic]',
 	args:true,
 	execute(message, args) {
-		console.log("file running");
+
 		const choice = args[0].toLowerCase();
 		var videos = require("./video/videos.json");
-
+		console.log("file running");
 		for(var i = 0; i < videos.length; i++)
 		{	console.log("phase 1 passesd");
 		for(var j=0;j< videos[i].name.length;j++)
