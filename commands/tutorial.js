@@ -6,7 +6,7 @@ module.exports = {
 	args:true,
 	execute(message, args) {
 		const choice = args[0].toLowerCase();
-		var videos = require("./video/videos.json")
+		var videos = require("./video/videos.json");
 
 		for(i = 0; i < videos.length; i++)
 		{	console.log("phase 1 passesd");
