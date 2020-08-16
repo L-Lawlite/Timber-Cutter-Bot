@@ -1,7 +1,32 @@
 [
   {
     "name":["t","troubleshoot"],
-    "description":"",
+    "description":"How to troubleshoot datapack on your own by Timber Forge!",
     "url":"https://www.youtube.com/watch?v=L79L2qaH3Mw"
+  },
+  {
+    "name":["custom_mob"],
+    "description":"Playlist on how to make custom mob by Timber Forge!",
+    "url":"https://www.youtube.com/playlist?list=PLi7Dhu-qOl8O1ejPf2ePGYimGLsRUCD0z"
+  },
+  {
+    "name":["custom_item"],
+    "description":"Playlist on how to make custom item by Timber Forge!",
+    "url":"https://www.youtube.com/playlist?list=PLi7Dhu-qOl8NQObbSPoDzJ4_7Auy-U2Gs"
+  },
+  {
+    "name":["raycasting","raycast"],
+    "description":"Raycasting tutorial by Cloud Wolf!",
+    "url":""
+  },
+  {
+    "name":[],
+    "description":"",
+    "url":""
+  },
+  {
+    "name":[],
+    "description":"",
+    "url":""
   }
 ]
