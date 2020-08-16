@@ -9,14 +9,16 @@ module.exports = {
 		var videos = require("./video/videos.json")
 
 		for(i = 0; i < videos.length; i++)
+		{	console.log("phase 1 passesd");
 		for(j=0;j< videos[i].name.length;j++)
 			{
+				console.log("phase 2 passed");
 				console.log(videos[i].name[j]);
 				if(choice === videos[i].name[j]){
 
 					message.channel.send(videos[i].url)
 			}
-		}
+		}}
 
 /*		switch (choice) {
 			case 'troubleshoot':
