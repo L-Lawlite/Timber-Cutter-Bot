@@ -5,7 +5,23 @@ module.exports = {
 	description: 'Links Video Tutorial',
 	aliases: ['tut','video'],
 	usage: '[Video Topic]',
-	execute(message, args) {
+	execute(message, args,cmd) {
+
+		if(!args.length)
+		{
+			const cmd = bot.commands
+
+			var helpDesc = []
+			cmd.forEach(command => {
+				helpDesc.push(`**${command.name}**`);
+				helpDesc.push(command.description);
+				helpDesc.push(“\n”);
+			})
+			const embed = new Discord.MessageEmbed();
+				.setTitle(“Videos”)
+				.setDescription(helpDesc.join(“\n”);
+				message.channel.send(embed);
+		}
 
 		const choice = args[0].toLowerCase();
 		var videos = require("./video/videos.json");
