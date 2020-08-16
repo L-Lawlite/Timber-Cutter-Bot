@@ -17,10 +17,10 @@ module.exports = {
 				helpDesc.push(command.description);
 				helpDesc.push("\n");
 			})
-			const embed = new Discord.MessageEmbed()
-				.setTitle("Videos")
+			const embed = new Discord.MessageEmbed();
+			embed.setTitle("Videos")
 				.setDescription(helpDesc.join("\n");
-				message.channel.send(embed);
+			message.channel.send(embed);
 		}
 
 		const choice = args[0].toLowerCase();
