@@ -19,7 +19,7 @@ module.exports = {
 			})
 			const embed = new Discord.MessageEmbed();
 			embed.setTitle("Videos");
-			  .setDescription(helpDesc.join("\n"));
+			embed.setDescription(helpDesc.join("\n"));
 			message.channel.send(embed);
 		}
 
