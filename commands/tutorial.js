@@ -1,4 +1,5 @@
 const Discord = require('discord.js');
+const {prefix} = require('../config.json')
 
 module.exports = {
 	name: 'tutorial',
@@ -17,13 +18,13 @@ module.exports = {
 				helpDesc.push("\n");
 			})
 			const embed = new Discord.MessageEmbed();
-			embed.setTitle("Commands")
+			embed.setTitle(`Video list\n \`use ${prefix}tutorial [video name]\``)
 			 .setDescription(helpDesc.join("\n"));
 			return message.channel.send(embed);
 		}
 
 		const choice = args[0].toLowerCase();
-		console.log(videos);
+
 		for(var i = 0; i < videos.length; i++)
 		for(var j=0;j< videos[i].name.length;j++)
 		{
