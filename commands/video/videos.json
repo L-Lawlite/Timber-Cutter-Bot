@@ -1,5 +1,10 @@
 [
   {
+    "name":["datapack"],
+    "description":"Datapack Tutorial by Code Zealot",
+    "url":"https://www.youtube.com/playlist?list=PLSi-k507aOiYjvfjoRvMSZDeNOan6odum"
+  },
+  {
     "name":["troubleshoot","t"],
     "description":"How to troubleshoot datapack on your own by Timber Forge!",
     "url":"https://www.youtube.com/watch?v=L79L2qaH3Mw"
@@ -29,5 +34,10 @@
     "name":["custom_sound","custom_sounds",".ogg","ogg"],
     "description":"Custom Sound Tutorial by CowsDaBest",
     "url":"https://youtu.be/rGPxEYZW08Q"
+  },
+  {
+    "name":["directional_motion","entity_motion"],
+    "description":"Directional Motion Tutorial by Nopename",
+    "url":"https://www.youtube.com/watch?v=Df75vdRs7y4&t=259s"
   }
 ]
