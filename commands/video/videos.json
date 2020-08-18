@@ -5,12 +5,12 @@
     "url":"https://www.youtube.com/watch?v=L79L2qaH3Mw"
   },
   {
-    "name":["custom_mob"],
+    "name":["custom_mob","custom_mobs"],
     "description":"Playlist on how to make custom mob by Timber Forge!",
     "url":"https://www.youtube.com/playlist?list=PLi7Dhu-qOl8O1ejPf2ePGYimGLsRUCD0z"
   },
   {
-    "name":["custom_item"],
+    "name":["custom_item","custom_items"],
     "description":"Playlist on how to make custom item by Timber Forge!",
     "url":"https://www.youtube.com/playlist?list=PLi7Dhu-qOl8NQObbSPoDzJ4_7Auy-U2Gs"
   },
@@ -19,5 +19,15 @@
     "description":"Raycasting tutorial by Cloud Wolf!",
     "url":"https://youtu.be/fGlJpli5cYc",
     "url2":"https://youtu.be/ASVpGeLf_HU"
+  },
+  {
+    "name":["unicode"],
+    "description":"Minecraft Unicode Tutorial by Cloud Wolf!",
+    "url":"https://youtu.be/Eifs8BW1jNc"
+  },
+  {
+    "name":["custom_sound","custom_sounds",".ogg","ogg"],
+    "description":"Custom Sound Tutorial by CowsDaBest",
+    "url":"https://youtu.be/rGPxEYZW08Q"
   }
 ]
