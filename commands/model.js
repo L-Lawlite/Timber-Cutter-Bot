@@ -55,12 +55,16 @@ module.exports = {
            {
              name:'10. Make sure that you are using a .json model. If it’s a bbmodel, go to file—> export—> blockmodel and it should say saved as a .json file.',
              value:'\u200B'
+           },
+           {
+             name:'11.Check the log for errors',
+             value:`if u dont know how to check log use \`${prefix}log\``
            }
          );
 
         break;
       case 'help':
-        embed.setDescription(`**To ask for live help with a resource pack item model error, send SCREENSHOTS of:**\n  1. File STRUCTURE of pack leading to the folder holding the custom model.\n  2. File STRUCTURE of pack leading to the folder holding the textures.\n  3.The TEXT of the json file for the item receiving the model. (Not the model itself)\n  4.The TEXT of the top section of the model's json file.`)
+        embed.setDescription(`**To ask for live help with a resource pack item model error, send SCREENSHOTS of:**\n  1. File STRUCTURE of pack leading to the folder holding the custom model.\n  2. File STRUCTURE of pack leading to the folder holding the textures.\n  3.The TEXT of the json file for the item receiving the model. (Not the model itself)\n  4.The TEXT of the top section of the model's json file.\n 5.Add screenshot of log with the message(if u dont know how to check log use \`${prefix}log\`).`);
         break;
       default:
         return;
