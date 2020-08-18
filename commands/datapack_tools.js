@@ -3,6 +3,7 @@ const Discord = require('discord.js');
 module.exports = {
   name: 'datapack_tools',
 	description: 'Shows important website and Application for datapack',
+  aliases:['dpc_tools'],
 	execute(message, args) {
     const embed = new Discord.MessageEmbed()
      .setDescription(`Here are some useful tools for datapack creating:`)
