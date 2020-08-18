@@ -18,7 +18,7 @@ module.exports = {
 				helpDesc.push("\n");
 			})
 			const embed = new Discord.MessageEmbed();
-			embed.setTitle(`Video list\n \`use ${prefix}tutorial [video name]\``)
+			embed.setTitle(`Video list\nuse \`${prefix}tutorial [video name]\``)
 			 .setDescription(helpDesc.join("\n"));
 			return message.channel.send(embed);
 		}
