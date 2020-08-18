@@ -30,11 +30,12 @@ module.exports = {
 			if(choice === videos[i].name[j])
 			{
 				message.channel.send(videos[i].url);
+				if(videos[i].url2) message.channel.send(videos[i].url2);
 			}
 		}
 
 /*		switch (choice) {
-		
+
 			case 'unicode':
 				message.channel.send('https://youtu.be/Eifs8BW1jNc');
 				break;
