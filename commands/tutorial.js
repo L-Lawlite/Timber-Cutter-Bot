@@ -34,19 +34,5 @@ module.exports = {
 				if(videos[i].url2) message.channel.send(videos[i].url2);
 			}
 		}
-
-/*		switch (choice) {
-
-			case 'unicode':
-				message.channel.send('https://youtu.be/Eifs8BW1jNc');
-				break;
-			case 'custom_sound':
-			case '.ogg':
-			case 'ogg':
-				message.channel.send('https://youtu.be/rGPxEYZW08Q');
-				break;
-			default:
-
-		}*/
 	},
 };
