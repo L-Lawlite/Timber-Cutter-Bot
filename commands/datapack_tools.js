@@ -46,7 +46,7 @@ module.exports = {
        },
        {
          name:`Particle Generator`,
-         value:`[Particle Plots](https://cloudwolfyt.github.io/pages/gens/particle-plots.html)`
+         value:`[Cloud Wolf](https://cloudwolfyt.github.io/pages/gens/particle-plots.html)\n[Gravitowl](https://gravitowl.github.io/pages/gens/part_plot.html)`
        }
 
      );
