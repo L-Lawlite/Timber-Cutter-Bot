@@ -12,7 +12,7 @@ module.exports = {
 		{
 			var helpDesc = [];
 			videos.forEach(v => {
-				helpDesc.push(v.name[0]);
+				helpDesc.push(`\`${v.name[0]}\``);
 				helpDesc.push(v.description);
 				helpDesc.push("\n");
 			})
