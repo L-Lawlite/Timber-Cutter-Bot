@@ -32,7 +32,7 @@ module.exports = {
 			{
 				if(!videos[i].note) message.channel.send(videos[i].url);
 				else if (videos[i].note) {
-					message.channel.send(videos[i].url + `\n**Note: ${videos[i].note}** ` );
+					message.channel.send(`${videos[i].url}\n**Note:${videos[i].note}**`);
 				}
 				if(videos[i].url2) message.channel.send(videos[i].url2);
 			}
