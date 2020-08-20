@@ -20,6 +20,11 @@
     "url":"https://www.youtube.com/playlist?list=PLi7Dhu-qOl8NQObbSPoDzJ4_7Auy-U2Gs"
   },
   {
+    "name":["custom_crafter","custom_crafting","floor_crafting","dispenser_crafting"],
+    "description":"Custom item crafting using many methods by TheFedora#5666",
+    "url":"https://www.youtube.com/watch?v=9DkPcQf2uek"
+  },
+  {
     "name":["custom_blocks","custom_block"],
     "description":"Tutorial on Custom Blocks by Timber Forge",
     "url":"https://youtu.be/LUx9FqJpxQk",
