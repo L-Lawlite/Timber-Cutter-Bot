@@ -49,7 +49,8 @@ bot.on('message', message => {
   //open close channel
   if(message.channel.name == `🔑available-help`)
     message.channel.setName(`⏳busy-help`)
-      .catch(console.error());
+      .then(r => console.log('channel became busy'))
+      .catch(error => console.log(error));
 /*  if(message.channel.name == `⏳busy-help` && message.content.startsWith(`mcstacker`))
   {
     message.content.send(`https://mcstacker.net/`);
