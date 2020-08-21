@@ -17,7 +17,7 @@ const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('
 //displays the message "This bot is online!" on console log
 bot.once('ready',() =>{
   console.log('This bot is online!');
-  let serverCount = bot.guilds.length;
+  let serverCount = bot.guilds.size;
   console.log(serverCount);
   bot.user.setActivity('help channel 👀',{type: "WATCHING"});
 
