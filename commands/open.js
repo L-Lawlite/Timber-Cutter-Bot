@@ -23,8 +23,9 @@ module.exports = {
 
       if(message.channel.name == `⏳busy-help`){
         message.channel.send(openEmbed);
-        console.log('channel became open');
-        message.channel.setName(`🔑available-help`);
+        message.channel.setName(`🔑available-help`)
+          .then(r => console.log('channel became open'))
+          .catch(error => console.log(error));
       }
       else{
         message.reply('u can\'t use it right now');
