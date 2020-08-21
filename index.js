@@ -15,7 +15,7 @@ bot.commands = new Discord.Collection();
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 
 //displays the message "This bot is online!" on console log
-bot.once('ready',() =>{
+bot.on('ready',() =>{
   console.log('This bot is online!');
   let serverCount = bot.guilds.cache.size;
   bot.user.setActivity(`help channel in ${serverCount} servers 👀`,{type: "WATCHING"});
