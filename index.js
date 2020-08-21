@@ -17,7 +17,7 @@ const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('
 //displays the message "This bot is online!" on console log
 bot.once('ready',() =>{
   console.log('This bot is online!');
-  bot.user.setActivity('help channel 👀',{type: "WATCHING"});
+
 })
 
 
@@ -36,7 +36,9 @@ bot.on('message', message => {
   //checks	if message is send by this bot if yes terminate the program
 	if (message.author.bot) return;
 
-
+  let serverCount = bot.guilds.length;
+  console.log(serverCount);
+  bot.user.setActivity('help channel 👀',{type: "WATCHING"});
 
   //loads the command after removing prefix
 	const args = message.content.slice(prefix.length).trim().split(/ +/);
