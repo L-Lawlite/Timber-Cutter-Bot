@@ -18,8 +18,7 @@ const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('
 bot.once('ready',() =>{
   console.log('This bot is online!');
   let serverCount = bot.guilds.cache.size;
-  console.log(serverCount);
-  bot.user.setActivity('help channel 👀',{type: "WATCHING"});
+  bot.user.setActivity(`help channel in ${serverCount} servers 👀`,{type: "WATCHING"});
 
 })
 
