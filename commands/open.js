@@ -23,6 +23,7 @@ module.exports = {
 
       if(message.channel.name == `⏳busy-help`){
         message.channel.send(openEmbed);
+        console.log('channel became open');
         message.channel.setName(`🔑available-help`);
       }
       else{
