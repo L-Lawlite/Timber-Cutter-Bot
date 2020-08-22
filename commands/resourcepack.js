@@ -5,7 +5,7 @@ module.exports = {
 	execute(message, args) {
 		fs.readFile('./commands/txt/resourcepack_format.txt','utf8',function(err,data){
 			if(err) console.log(err);
-			message.channel.send(data);
+			message.channel.send(`Resource pack Structure for 1.16\n${data}`);
 		});
 	},
 };
