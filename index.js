@@ -40,7 +40,10 @@ bot.on('message', message => {
       let serverCount = bot.guilds.cache.size;
       bot.user.setActivity(`help channel in ${serverCount} servers 👀`,{type: "WATCHING"});
     }
-    catch(err => console.log(err))
+    catch(err)
+    {
+      console.log('unable to update status');
+    }
   },1000)
 
   //loads the command after removing prefix
