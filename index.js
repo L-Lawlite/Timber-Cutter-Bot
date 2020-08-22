@@ -17,8 +17,6 @@ const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('
 //displays the message "This bot is online!" on console log
 bot.on('ready',() =>{
   console.log('This bot is online!');
-  let serverCount = bot.guilds.cache.size;
-  bot.user.setActivity(`help channel in ${serverCount} servers 👀`,{type: "WATCHING"});
 
 })
 
@@ -37,8 +35,13 @@ const cooldowns = new Discord.Collection();
 bot.on('message', message => {
   //checks	if message is send by this bot if yes terminate the program
 	if (message.author.bot) return;
-
-
+  setInterval(async function(){
+    try{
+      let serverCount = bot.guilds.cache.size;
+      bot.user.setActivity(`help channel in ${serverCount} servers 👀`,{type: "WATCHING"});
+    }
+    catch(err => console.log(err))
+  },1000)
 
   //loads the command after removing prefix
 	const args = message.content.slice(prefix.length).trim().split(/ +/);
