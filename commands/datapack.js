@@ -1,4 +1,5 @@
 const fs = require('fs');
+const Discord = require('discord.js');
 module.exports = {
 	name: 'datapack',
 	description: 'Shows Datapack Structure for 1.16',
