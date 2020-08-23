@@ -6,7 +6,7 @@ module.exports = {
 	execute(message, args) {
 		const embed = new Discord.MessageEmbed()
 			.setColor('#0099ff')
-			.setDescription(`To download the template [Click Here!]()`)
+			.setDescription(`To download the template [Click Here!](https://drive.google.com/uc?export=download&id=17PqJ4eG3vrcyIGGT_IwZz6TvIZTNlBWg)`)
 		fs.readFile('./commands/txt/datapack_format.txt','utf8',function(err,data){
 			if(err) console.log(err);
 			message.channel.send(`**Datapack Structure for 1.16.2 and above:**\n\n${data}`);
