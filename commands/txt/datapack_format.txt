@@ -4,6 +4,17 @@
             📜 pack.mcmeta
             📂 data
                 📂 <namespace>
+                    📂 dimension
+                    📂 dimension_type
+                    📂 worldgen
+                        📂 biome
+                        📂 configured_carver
+                        📂 configured_feature
+                        📂 configured_structure_feature
+                        📂 configured_surface_builder
+                        📂 noise_settings
+                        📂 processor_list
+                        📂 template_pool
                     📂 advancements
                     📂 loot_tables
                     📂 functions
