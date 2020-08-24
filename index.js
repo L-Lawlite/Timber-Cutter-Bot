@@ -20,7 +20,8 @@ bot.on('ready',() =>{
   setInterval(async function(){
     try{
       let serverCount = bot.guilds.cache.size;
-      bot.user.setActivity(`help channel in ${serverCount} servers 👀`,{type: "WATCHING"});
+      console.log(serverCount);
+      bot.user.setActivity(`help channel in ${serverCount} servers 👀\nFor help use \`??help\``,{type: "WATCHING"});
     }
     catch(err)
     {
