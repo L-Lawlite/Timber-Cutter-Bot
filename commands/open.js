@@ -21,7 +21,7 @@ module.exports = {
       );
 
 
-      if(message.channel.name == `⏳busy-help`){
+      if(message.channel.name.startsWith(⏳)){
         message.channel.send(openEmbed);
         message.channel.setName(`🔑available-help`)
           .then(r => console.log('channel became open'))
