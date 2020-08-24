@@ -56,10 +56,12 @@ bot.on('message', message => {
   		|| bot.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName));
 
   //open close channel
-  if(message.channel.name == `🔑available-help`)
-    message.channel.setName(`⏳busy-help`)
-      .then(r => console.log('channel became busy'))
-      .catch(error => console.log(error));
+  if(message.channel.name == `🔑available-help`){
+      console.log(message.channel.author.username);
+      message.channel.setName(`⏳busy-help`)
+        .then(r => console.log('channel became busy'))
+        .catch(error => console.log(error));
+    }
 /*  if(message.channel.name == `⏳busy-help` && message.content.startsWith(`mcstacker`))
   {
     message.content.send(`https://mcstacker.net/`);
