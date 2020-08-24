@@ -57,8 +57,7 @@ bot.on('message', message => {
 
   //open close channel
   if(message.channel.name == `🔑available-help`){
-      console.log(message.author.username);
-      message.channel.setName(`⏳busy-help`)
+      message.channel.setName(`⏳${message.author.username} question`)
         .then(r => console.log('channel became busy'))
         .catch(error => console.log(error));
     }
