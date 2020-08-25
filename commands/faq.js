@@ -7,6 +7,6 @@ module.exports = {
     var faqs = new Discord.Collection();
     const faqName = fs.readdirSync('./faq').filter(file => file.endsWith('.js'));
 
-		};
+		}
 	},
 };
