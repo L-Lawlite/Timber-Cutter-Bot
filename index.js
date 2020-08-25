@@ -42,6 +42,11 @@ for (const file of commandFiles) {
 	bot.commands.set(command.name, command);
 }
 
+for (const file of commandFiles) {
+	const faq = require(`./commands/faq/${file}`);
+	bot.faqs.set(faq.name, faq);
+}
+
 //for cooldown operation if needed
 const cooldowns = new Discord.Collection();
 
