@@ -5,6 +5,7 @@ module.exports = {
 	description: 'Some useful faq',
 	execute(message, args) {
     var faqs = new Discord.Collection();
+    const faqName = fs.readdirSync('./faq').filter(file => file.endsWith('.js'));
     
 		});
 	},
