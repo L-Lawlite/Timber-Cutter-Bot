@@ -16,6 +16,7 @@ const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('
 
 bot.faqs = new Discord.Collection();
 const faqName = fs.readdirSync('./commands/faq').filter(file => file.endsWith('.js'));
+console.log(bot.faqs);
 
 //displays the message "This bot is online!" on console log
 bot.on('ready',() =>{
