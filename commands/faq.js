@@ -3,7 +3,11 @@ const Discord = require('discord.js');
 module.exports = {
 	name: 'faq',
 	description: 'Some useful faq',
-	execute(message, args,faqs) {
+	execute(message, args) {
+    const { faqs } = message.client;
+    console.log(faqs);
+    if(!args.length){
 
+    }
 	},
 };
