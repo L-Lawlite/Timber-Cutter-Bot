@@ -42,7 +42,7 @@ for (const file of commandFiles) {
 	bot.commands.set(command.name, command);
 }
 
-for (const file of commandFiles) {
+for (const file of faqName) {
 	const faq = require(`./commands/faq/${file}`);
 	bot.faqs.set(faq.name, faq);
 }
