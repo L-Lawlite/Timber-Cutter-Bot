@@ -13,6 +13,7 @@ bot.commands = new Discord.Collection();
 
 //reads all the file from commands folder that are of type .js
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
+
 bot.faqs = new Discord.Collection();
 const faqName = fs.readdirSync('./commands/faq').filter(file => file.endsWith('.js'));
 
