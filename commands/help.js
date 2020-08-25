@@ -10,6 +10,7 @@ module.exports = {
 	execute(message, args) {
 		const data = [];
 		const { commands } = message.client;
+		console.log(commands);
 		const helpEmbed = new Discord.MessageEmbed();
 
 		if (!args.length) {
