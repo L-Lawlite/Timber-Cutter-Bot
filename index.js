@@ -19,7 +19,7 @@ const faqName = fs.readdirSync('./commands/faq').filter(file => file.endsWith('.
 
 //displays the message "This bot is online!" on console log
 bot.on('ready',() =>{
-  console.log('This bot is online!');
+  console.log(`${bot.user.tag} is online!`);
   setInterval(async function(){
     try{
       let serverCount = bot.guilds.cache.size;
