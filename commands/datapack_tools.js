@@ -3,7 +3,7 @@ const Discord = require('discord.js');
 module.exports = {
   name: 'datapack_tools',
 	description: 'Shows important website and Application for datapack',
-  aliases:['dpc_tools'],
+  aliases:['dpc_tools','dpc_tool'],
 	execute(message, args) {
     const embed = new Discord.MessageEmbed()
      .setDescription(`Here are some useful tools for datapack creating:`)
@@ -46,7 +46,7 @@ module.exports = {
        },
        {
          name:`Particle Generator`,
-         value:`[Cloud Wolf](https://cloudwolfyt.github.io/pages/gens/particle-plots.html)\n[Gravitowl](https://gravitowl.github.io/pages/gens/part_plot.html)`
+         value:`[Cloud Wolf](https://cloudwolfyt.github.io/pages/gens/particle-plots.html)\n[Gravitowl](https://gravitowl.github.io/plotter.html)`
        }
 
      );
