@@ -3,6 +3,7 @@ const Discord = require('discord.js');
 module.exports = {
 	name: 'resourcepack',
 	description: 'Shows Resource Pack Structure for 1.16',
+	aliases:['rpc'],
 	execute(message, args) {
 		const embed = new Discord.MessageEmbed()
 			.setColor('#0099ff')
