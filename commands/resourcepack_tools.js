@@ -26,7 +26,7 @@ module.exports = {
        },
        {
         name:`Custom Model Data Generator`,
-        value:`[Predicate Generator](https://gravitowl.github.io/modeldata.html)`
+        value:`[Custom Model Data Generator](https://gravitowl.github.io/modeldata.html)`
       }
      );
 

@@ -28,7 +28,10 @@ module.exports = {
           .catch(error => console.log(error));
       }
       else{
-        message.reply('u can\'t use it right now');
-      }
+        if(message.channel.name.startsWith(`🔑`))
+        message.reply(' Just ask the question');
+        else
+        message.reply(' You can\'t use it here');
+      } 
 	},
 };
