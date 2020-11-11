@@ -41,5 +41,5 @@
  ```resourcepacks\<namespace\assets\minecraft\models\item```
  
  
- if you are still struggling to get a working custom model data json file go to [Click Here](https://gravitowl.github.io/modeldata.html) and generate it by your own! (credit to gravitowl)
+ if you are still struggling to get a working custom model data json file go to (https://gravitowl.github.io/modeldata.html) and generate it by your own! (credit to gravitowl)
  

@@ -70,7 +70,7 @@ module.exports = {
       case 'details':
         fs.readFile('./commands/txt/big_help.txt','utf8',function(err,data){
           if(err) console.log(err);
-         embed.setDescription(data);
+         message.channel.send(data);
         });
         break;
       default:
