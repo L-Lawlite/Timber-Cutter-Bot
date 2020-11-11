@@ -72,6 +72,7 @@ module.exports = {
           if(err) console.log(err);
          embed.setDescription(data);
         });
+        break;
       default:
         return;
 
