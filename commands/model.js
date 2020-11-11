@@ -70,9 +70,9 @@ module.exports = {
       case 'details':
         fs.readFile('./commands/txt/big_help.txt','utf8',function(err,data){
           if(err) console.log(err);
-         message.channel.send(data);
+         message.channel.send(`${data}`);
         });
-        break;
+        return;
       default:
         return;
 
