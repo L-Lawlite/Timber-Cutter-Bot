@@ -65,6 +65,7 @@ bot.on('message', message => {
   		|| bot.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName));
 
   //open close channel
+  if(message.channel.type != "dm")
   if(message.channel.name.startsWith(`🔑`)){
       message.channel.setName(`⏳${message.author.username} question`)
         .then(r => console.log('channel became busy'))

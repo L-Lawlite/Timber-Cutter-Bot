@@ -6,7 +6,7 @@ module.exports = {
   name:'model',
   description:'List everything related to model',
   args: true,
-  usage: 'error/help',
+  usage: 'error/help/details',
   cooldown: 10,
   execute(message, args){
     const embed = new Discord.MessageEmbed();
