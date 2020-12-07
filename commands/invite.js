@@ -7,7 +7,7 @@ module.exports = {
     const embed = new Discord.MessageEmbed()
     .setColor('#0099ff')
     .setTitle('**Invite Bot Link:**')
-    .setDescription('[Click Here!](https://discord.com/oauth2/authorize?client_id=728842617705726026&scope=bot&permissions=8)');
+    .setDescription('[Click Here!](https://discord.com/oauth2/authorize?client_id=728842617705726026&scope=bot&permissions=8)\n[top.gg link](https://top.gg/bot/728842617705726026)');
     message.channel.send(embed);
 	},
 };
