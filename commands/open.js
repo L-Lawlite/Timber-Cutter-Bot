@@ -7,9 +7,9 @@ module.exports = {
   guildOnly: true,
   cooldown: 10,
 	execute(message, args) {
-    if(args[0].length)
+    if(args.length){
       const reason = args[0].toLowerCase();
-
+    }
 		const openEmbed = new Discord.MessageEmbed()
       .setColor('#0099ff')
       .setTitle('**Minecraft Help Channel**')
