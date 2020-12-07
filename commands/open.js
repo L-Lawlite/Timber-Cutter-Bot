@@ -11,7 +11,7 @@ module.exports = {
       .setDescription('Feel free to ask for help or advice on data packs, resource packs, or anything else related to Minecraft')
       .addFields(
         {
-          name:'How to ask question?',
+          name:'How to ask a question',
           value:'Many would think this is simple, but please read this anyways.'
         },
         {

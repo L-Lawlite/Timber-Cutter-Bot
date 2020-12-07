@@ -9,7 +9,7 @@
  "overrides": [
     { 
      "predicate": {
-         "custom_model_data": <number
+         "custom_model_data": <number>
         }, 
     "model": "item/<model's json file>"
     }

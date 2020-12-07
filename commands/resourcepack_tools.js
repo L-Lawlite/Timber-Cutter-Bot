@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 module.exports = {
   name: 'resourcepack_tools',
-	description: 'Shows important websites and Applications for Resource Packs',
+	description: 'Shows important websites and applications for Resource Packs',
   aliases:['rs_tools','rpc_tools'],
 	execute(message, args) {
     const embed = new Discord.MessageEmbed()
