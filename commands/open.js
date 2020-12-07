@@ -28,10 +28,10 @@ module.exports = {
       );
       if(args.length)
       {
-        const reason = args[0];
-        openEmbed.addField(
+       
+        openEmbed.addFields(
           
-        { name:"Reason",value:`${reason}`,inline: false}
+        { name:"Reason",value:`${args}`,inline: true}
         )
       }
 
