@@ -1,20 +1,22 @@
  Parent file for models
  ```json
- {
+{
  "parent": "item/handheld",
  "textures": {
  "layer0": "item/<base item"
  },
  
  "overrides": [
- { "predicate": {"custom_model_data": <number}, "model": "item/<model's json file"}
- 
+    { 
+     "predicate": {
+         "custom_model_data": <number
+        }, 
+    "model": "item/<model's json file>"
+    }
  ]
- 
- 
- }```
- 
- 
+
+}```
+
  Item model json file first part
  
  ```json
@@ -35,7 +37,7 @@
  texture (png files) goes into
  ```resourcepacks\<namespace\assets\minecraft\textures\item```
  
- and the 2 json go in 
+ and the 2 json go in
  ```resourcepacks\<namespace\assets\minecraft\models\item```
  
  

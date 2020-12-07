@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 module.exports = {
   name: 'resourcepack_tools',
-	description: 'Shows important website and Application for Resource Pack',
+	description: 'Shows important websites and Applications for Resource Packs',
   aliases:['rs_tools','rpc_tools'],
 	execute(message, args) {
     const embed = new Discord.MessageEmbed()
@@ -21,7 +21,7 @@ module.exports = {
          value:`[Lots of Player Heads](https://minecraft-heads.com/ )`
        },
        {
-         name:`Browse gamefiles and get the default model json files etc`,
+         name:`Browse gamefiles, get the default model json files, etc`,
          value:`[MC Cloud](https://mcasset.cloud/)`
        },
        {

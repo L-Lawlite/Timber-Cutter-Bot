@@ -12,11 +12,11 @@ module.exports = {
       .addFields(
         {
           name:'How to ask question?',
-          value:'Many would think this is simple, but read this anyways.'
+          value:'Many would think this is simple, but please read this anyways.'
         },
         {
           name:'**Give properly**:',
-          value:`1.What are you trying to do?\n2.What have you tried (Send the commands and such)\n3. What's the problem, is it invalid, or does it just not do what you want it to do?\n4. What does log say (Optional, unless the Helper asks for it)\n\nTo learn how to properly ask a question [Click Here!](https://dontasktoask.com/)`
+          value:`1.What are you trying to do?\n2.What have you tried? (Send the commands and such)\n3. What's the problem? Is it invalid, or does it just not do what you want it to do?\n4. What does log say? (Optional, unless the Helper asks for it)\n\nTo learn how to properly ask a question [Click Here!](https://dontasktoask.com/)`
         }
       );
 
@@ -31,7 +31,7 @@ module.exports = {
         if(message.channel.name.startsWith(`🔑`))
         message.reply(' Just ask the question');
         else
-        message.reply(' You can\'t use it here');
+        message.reply(' You can\'t use this here!');
       } 
 	},
 };
