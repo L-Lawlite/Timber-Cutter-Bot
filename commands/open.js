@@ -5,7 +5,7 @@ module.exports = {
   name: 'open',
 	description: 'Free the channel so another person can ask question',
   guildOnly: true,
-  cooldown: 60,
+  cooldown: 10,
 	execute(message, args) {
 		const openEmbed = new Discord.MessageEmbed()
       .setColor('#0099ff')
