@@ -8,7 +8,7 @@ module.exports = {
 	usage: '[Video Topic]',
 	execute(message, args) {
 		var videos = require("./video/videos.json");
-
+		// This is bad
 		if(!args.length)
 		{
 			var helpDesc = [];
@@ -22,7 +22,7 @@ module.exports = {
 			 .setDescription(helpDesc.join("\n"));
 			return message.channel.send(embed);
 		}
-
+		//
 		const choice = args[0].toLowerCase();
 
 		for(var i = 0; i < videos.length; i++)
