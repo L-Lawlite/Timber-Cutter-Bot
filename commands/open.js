@@ -7,6 +7,8 @@ module.exports = {
   guildOnly: true,
   cooldown: 10,
 	execute(message, args) {
+    const reason = args[0].toLowerCase();
+
 		const openEmbed = new Discord.MessageEmbed()
       .setColor('#0099ff')
       .setTitle('**Minecraft Help Channel**')
@@ -19,9 +21,19 @@ module.exports = {
         {
           name:'**Give these properly**:',
           value:`1.What are you trying to do?\n2.What have you tried? (Send the commands and such)\n3. What's the problem? Is it invalid, or does it just not do what you want it to do?\n4. What does log say? (Optional, unless the Helper asks for it)\n\nTo learn how to properly ask a question [Click Here!](https://dontasktoask.com/)`
+        },
+        {
+          name:"Opened by",
+          value:`${message.author.username}`
         }
       );
-
+      if(reason.length)
+      {
+        openEmbed.addField(
+          
+        { name:"Reason",value:`${reason}`,inline:true}
+        )
+      }
 
       if(message.channel.name.startsWith(`⏳`)){
         
