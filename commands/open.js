@@ -8,7 +8,7 @@ module.exports = {
   cooldown: 10,
 	execute(message, args) {
     if(args.length){
-      const reason = args[0].toLowerCase();
+      const reason = args.toLowerCase();
     }
 		const openEmbed = new Discord.MessageEmbed()
       .setColor('#0099ff')
@@ -28,7 +28,7 @@ module.exports = {
           value:`${message.author.username}`
         }
       );
-      if(reason.length)
+      if(args.length)
       {
         openEmbed.addField(
           
