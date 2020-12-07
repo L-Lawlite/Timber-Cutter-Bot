@@ -1,4 +1,5 @@
 const Discord = require('discord.js');
+const { prefix } = require('../config.json');
 
 module.exports = {
   name: 'open',
@@ -23,10 +24,13 @@ module.exports = {
 
 
       if(message.channel.name.startsWith(`⏳`)){
-        message.channel.send(openEmbed);
-        message.channel.setName(`🔑ask-question-here`)
-          .then(r => console.log('channel became open'))
-          .catch(error => console.log(error));
+        if(!message.content.startsWith(prefix) && !message.author.bot)
+        {
+          message.channel.send(openEmbed);
+          message.channel.setName(`🔑ask-question-here`)
+            .then(r => console.log('channel became open'))
+            .catch(error => console.log(error));
+        }
       }
       else{
         if(message.channel.name.startsWith(`🔑`))
