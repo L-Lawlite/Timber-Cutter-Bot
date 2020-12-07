@@ -66,7 +66,7 @@ bot.on('message', message => {
 
   //open close channel
   if(message.channel.type != "dm")
-  if(message.channel.name.startsWith(`🔑`)){
+  if(message.channel.name.startsWith(`🔑`) && !message.content.startsWith(prefix)){
       message.channel.setName(`⏳${message.author.username} question`)
         .then(r => console.log('channel became busy'))
         .catch(error => console.log(error));
