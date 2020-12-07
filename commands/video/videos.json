@@ -51,5 +51,10 @@
     "name":["directional_motion","entity_motion"],
     "description":"Directional Motion Tutorial by Nopename",
     "url":"https://www.youtube.com/watch?v=Df75vdRs7y4&t=259s"
+  },
+  {
+  "name":["custom_recipe"],
+  "description":"Crafting Table Recipe tutorial by Timber Forge",
+  "url":"https://youtu.be/Pt7y6PNP6KY"
   }
 ]
