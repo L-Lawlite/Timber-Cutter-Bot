@@ -30,7 +30,7 @@ module.exports = {
       }
       else{
         if(message.channel.name.startsWith(`🔑`))
-        message.reply(' Just ask the question');
+        message.reply(' Just ask the question. Channel is already open.');
         else
         message.reply(' You can\'t use this here!');
       } 
