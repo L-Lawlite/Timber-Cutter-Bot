@@ -8,7 +8,7 @@ module.exports = {
   cooldown: 10,
 	execute(message, args) {
     if(args.length){
-      const reason = args.toLowerCase();
+      const reason = args[0].toLowerCase();
     }
 		const openEmbed = new Discord.MessageEmbed()
       .setColor('#0099ff')
