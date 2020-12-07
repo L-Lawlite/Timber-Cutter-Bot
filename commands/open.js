@@ -24,13 +24,12 @@ module.exports = {
 
 
       if(message.channel.name.startsWith(`⏳`)){
-        if(!message.content.startsWith(prefix) && !message.author.bot)
-        {
-          message.channel.send(openEmbed);
-          message.channel.setName(`🔑ask-question-here`)
-            .then(r => console.log('channel became open'))
-            .catch(error => console.log(error));
-        }
+        
+        message.channel.send(openEmbed);
+        message.channel.setName(`🔑ask-question-here`)
+          .then(r => console.log('channel became open'))
+          .catch(error => console.log(error));
+        
       }
       else{
         if(message.channel.name.startsWith(`🔑`))
