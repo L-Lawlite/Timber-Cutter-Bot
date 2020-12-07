@@ -43,9 +43,9 @@ module.exports = {
 			return message.reply('that\'s not a valid command!');
 		}
 
-		data.push(`**Name:** ${command.name}\n`);
+		data.push(`**Name:** ${command.name}`);
 
-		if (command.aliases) data.push(`\n**Aliases:** ${command.aliases.join(`,`)}`);
+		if (command.aliases) data.push(`\n\n**Aliases:** ${command.aliases.join(`,`)}`);
 		if (command.description) data.push(`\n**Description:** ${command.description}`);
 		if (command.usage) data.push(`\n**Usage:** ${prefix}${command.name} ${command.usage}`);
 
