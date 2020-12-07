@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 module.exports = {
   name: 'open',
-	description: 'Opens channel',
+	description: 'Free the channel so another person can ask question',
   guildOnly: true,
   cooldown: 60,
 	execute(message, args) {
