@@ -4,7 +4,7 @@ const {prefix} = require('../config.json')
 module.exports = {
 	name: 'tutorial',
 	description: 'Links Video Tutorial',
-	aliases: ['tut','video',['videos']],
+	aliases: ['tut','video','videos'],
 	usage: '[Video Topic]',
 	execute(message, args) {
 		var videos = require("./video/videos.json");
