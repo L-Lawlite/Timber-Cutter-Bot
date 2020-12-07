@@ -7,10 +7,7 @@ module.exports = {
   guildOnly: true,
   cooldown: 10,
 	execute(message, args) {
-    if(args.length){
-      let reason = args[0].toLowerCase();
-      
-    }
+   
 		const openEmbed = new Discord.MessageEmbed()
       .setColor('#0099ff')
       .setTitle('**Minecraft Help Channel**')
@@ -33,7 +30,7 @@ module.exports = {
       {
         openEmbed.addField(
           
-        { name:"Reason",value:`${reason}`,inline:true}
+        { name:"Reason",value:`${args}`,inline:true}
         )
       }
 
