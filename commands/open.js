@@ -7,7 +7,7 @@ module.exports = {
   guildOnly: true,
   cooldown: 10,
 	execute(message, args) {
-    if(args.length)
+    if(args[0].length)
       const reason = args[0].toLowerCase();
 
 		const openEmbed = new Discord.MessageEmbed()
