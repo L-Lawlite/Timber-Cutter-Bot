@@ -28,9 +28,10 @@ module.exports = {
       );
       if(args.length)
       {
+        const reason = args[0];
         openEmbed.addField(
           
-        { name:"Reason",value:`${args}`,inline:true}
+        { name:"Reason",value:`${reason}`,inline:true}
         )
       }
 
