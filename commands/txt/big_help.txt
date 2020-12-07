@@ -25,17 +25,15 @@
  }
  }```
  
- 
+
  this is the parent model list:
  ```handheld_rod - carrot on a stick or warped fungus on a stick
  handheld - tools and weapons such as swords and hoes
  generated - everything else```
  
- 
+
  texture (png files) goes into
  ```resourcepacks\<namespace\assets\minecraft\textures\item```
- 
- 
  
  and the 2 json go in 
  ```resourcepacks\<namespace\assets\minecraft\models\item```
