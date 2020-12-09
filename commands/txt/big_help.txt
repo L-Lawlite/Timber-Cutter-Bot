@@ -22,7 +22,7 @@
  {
  "parent": "item/handheld_rod",
  "textures": {
- "layer0": "item/<item texture"
+ "layer0": "item/<item texture>"
  }
  }```
 
@@ -33,9 +33,9 @@
  
 
  texture (png files) goes into
- ```resourcepacks\<namespace\assets\minecraft\textures\item```
+ ```resourcepacks\<namespace>\assets\minecraft\textures\item```
  and the 2 json go in
- ```resourcepacks\<namespace\assets\minecraft\models\item```
+ ```resourcepacks\<namespace>\assets\minecraft\models\item```
  
 
 If you are still struggling to get a working custom model data json file, go to (https://gravitowl.github.io/modeldata.html) and generate it by your own! (credit to gravitowl)
