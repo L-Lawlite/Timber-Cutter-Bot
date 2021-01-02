@@ -24,13 +24,7 @@ bot.on('ready',() =>{
     try{
       let serverCount = bot.guilds.cache.size;
       console.log(serverCount);
-      bot.user.setPresence({
-        status: "online",
-        game: {
-          name:`help channel in ${serverCount} servers 👀\n For help use \`??help\``,
-          type: "WATCHING"
-        }
-      })
+      bot.user.setActivity(`For help use \`??help\``,{type:"WATCHING", name: `help channel in ${serverCount} servers 👀`})
     }
     catch(err)
     {
