@@ -24,7 +24,7 @@ bot.on('ready',() =>{
     try{
       let serverCount = bot.guilds.cache.size;
       console.log(serverCount);
-      bot.user.setActivity(`For help use \`??help\``,{type:"WATCHING", name: `help channel in ${serverCount} servers 👀`})
+      bot.user.setActivity(`help channel in ${serverCount} servers 👀 For help use \`??help\``,{type:"WATCHING"});
     }
     catch(err)
     {
