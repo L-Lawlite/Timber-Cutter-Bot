@@ -47,7 +47,7 @@ module.exports = {
         if(message.channel.name.startsWith(`🔑`))
         message.reply(' Just ask the question. Channel is already open.');
         else
-        message.reply(' You can\'t use this here!');
+        message.reply('...  There\'s a time and place for everything, but not now.');
       } 
 	},
 };
