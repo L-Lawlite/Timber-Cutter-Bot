@@ -57,5 +57,10 @@
   "name":["custom_recipe"],
   "description":"Crafting Table Recipe tutorial by Timber Forge",
   "url":"https://youtu.be/Pt7y6PNP6KY"
+  },
+  {
+    "name":["loottable","loot_table","lootable"],
+    "description":"Basics of Loot Tables by Timber Forge",
+    "url":"https://youtu.be/SFOGmKZ-jXs"
   }
 ]
