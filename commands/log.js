@@ -6,7 +6,7 @@ module.exports = {
 	execute(message, args) {
     const embed = new Discord.MessageEmbed()
     .setColor('#0099ff')
-    .setDescription('To see the game log to debug errors in your datapack do this:')
+    .setDescription('To see the game log to debug errors in your datapack or resourcepack, do this:')
     .setImage('https://i.imgur.com/aL8XRaq.png');
 
     message.channel.send(embed);
