@@ -32,7 +32,7 @@
     "note":"There were some delays due to 1.16.2 Pre3 from a bug that prevented a change which would have been nice regarding armorstand lighting. It hasn't been fixed yet but there is a link to bug tracker in the description"
   },
   {
-    "name":["raycasting","raycast"],
+    "name":["raycasting","raycast","rct"],
     "description":"Raycasting tutorial by Cloud Wolf!",
     "url":"https://youtu.be/fGlJpli5cYc",
     "url2":"https://youtu.be/ASVpGeLf_HU"
@@ -59,8 +59,13 @@
   "url":"https://youtu.be/Pt7y6PNP6KY"
   },
   {
-    "name":["loottable","loot_table","lootable"],
+    "name":["loottable","loot_table","lt"],
     "description":"Basics of Loot Tables by Timber Forge",
     "url":"https://youtu.be/SFOGmKZ-jXs"
+  },
+  {
+    "name": ["custom_helmet","ch","helmet"],
+    "description": "Custom Helmets by SteroidUnicorn",
+    "url": "https://youtu.be/ynLJfk5te3g"
   }
 ]
