@@ -55,6 +55,12 @@ bot.on('message', message => {
   //checks	if message is send by this bot if yes terminate the program
 	if (message.author.bot) return;
 
+  if(message.author === "228141283175038977" && message.isMemberMentioned(bot.user)){
+    message.channel.send('you summoned me, Master?🙇');
+    return;
+
+  }
+    
 
   //loads the command after removing prefix
 	const args = message.content.slice(prefix.length).trim().split(/ +/);
