@@ -55,7 +55,7 @@ bot.on('message', message => {
   //checks	if message is send by this bot if yes terminate the program
 	if (message.author.bot) return;
 
-  if(message.author === "228141283175038977" && message.isMemberMentioned(bot.user)){
+  if(message.author.id == "228141283175038977" && message.isMemberMentioned(bot.user)){
     message.channel.send('you summoned me, Master?🙇');
     return;
 
