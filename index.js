@@ -64,7 +64,9 @@ bot.on('message', message => {
     if(message.author.id == Masters && message.mentions.has(bot.user)){
       message.channel.send('you summoned me, Master?🙇');
       return;
-
+    }
+    else {
+      message.reply('Why have you disturbed my slumber mortal?\n👿');
     }
   }
     
