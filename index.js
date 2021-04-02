@@ -59,14 +59,15 @@ bot.on('message', message => {
   //checks	if message is send by this bot if yes terminate the program
 	if (message.author.bot) return;
 
-  
+  if(message.mentions.has(bot.user))
   for (const Masters of Master_id) {
-    if(message.author.id == Masters && message.mentions.has(bot.user)){
+    if(message.author.id == Masters){
       message.channel.send('you summoned me, Master?🙇');
       return;
     }
     else {
       message.reply('Why have you disturbed my slumber mortal?\n👿');
+      break;
     }
   }
     
