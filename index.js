@@ -11,6 +11,10 @@ const bot = new Discord.Client();
 //takes command
 bot.commands = new Discord.Collection();
 
+
+
+Master_id=["228141283175038977","536249458065670154"]
+
 //reads all the file from commands folder that are of type .js
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 
@@ -55,10 +59,13 @@ bot.on('message', message => {
   //checks	if message is send by this bot if yes terminate the program
 	if (message.author.bot) return;
 
-  if(message.author.id == "228141283175038977" && message.mentions.has(bot.user)){
-    message.channel.send('you summoned me, Master?🙇');
-    return;
+  
+  for (const Masters of Master_id) {
+    if(message.author.id == Masters.id && message.mentions.has(bot.user)){
+      message.channel.send('you summoned me, Master?🙇');
+      return;
 
+    }
   }
     
 
