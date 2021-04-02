@@ -61,7 +61,7 @@ bot.on('message', message => {
 
   
   for (const Masters of Master_id) {
-    if(message.author.id == Masters.id && message.mentions.has(bot.user)){
+    if(message.author.id == Masters && message.mentions.has(bot.user)){
       message.channel.send('you summoned me, Master?🙇');
       return;
 
