@@ -69,14 +69,16 @@ bot.on('message', message => {
 	if (message.author.bot) return;
 
   if(message.mentions.has(bot.user)){
-    const summoner = check_master(message);
-    if(summoner == 1){
-      message.channel.send('you summoned me, Master?🙇');
-      return;
-    }
-    else {
-      message.reply('Why have you disturbed my slumber, mortal?\n👿');
-    }
+    check_master(message)
+      .then(result =>{
+        if(result == 1){
+          message.channel.send('you summoned me, Master?🙇');
+          return;
+        }
+        else {
+          message.reply('Why have you disturbed my slumber, mortal?\n👿');
+        }
+      }) 
   }
     
 
