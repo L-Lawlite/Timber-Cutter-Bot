@@ -69,7 +69,7 @@ bot.on('message', message => {
 	if (message.author.bot) return;
 
   if(message.mentions.has(bot.user)){
-    var summoner = check_master(message);
+    const summoner = check_master(message);
     if(summoner == 1){
       message.channel.send('you summoned me, Master?🙇');
       return;
