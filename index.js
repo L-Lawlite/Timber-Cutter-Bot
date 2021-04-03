@@ -13,7 +13,16 @@ bot.commands = new Discord.Collection();
 
 
 
-Master_id=["228141283175038977","536249458065670154"]
+Master_id=["228141283175038977","536249458065670154"];
+async function check_master(msg){
+  for(const masters of Master_id){
+    if(msg.author.id == masters)
+      return masters;
+  
+  return 0;
+  }
+
+}
 
 //reads all the file from commands folder that are of type .js
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
@@ -60,8 +69,8 @@ bot.on('message', message => {
 	if (message.author.bot) return;
 
   if(message.mentions.has(bot.user))
-  for (const Masters of Master_id) {
-    if(message.author.id == Masters){
+    const summoner = check_master(message);
+    if(summoner){
       message.channel.send('you summoned me, Master?🙇');
       return;
     }
@@ -69,7 +78,7 @@ bot.on('message', message => {
       message.reply('Why have you disturbed my slumber mortal?\n👿');
       break;
     }
-  }
+  
     
 
   //loads the command after removing prefix
