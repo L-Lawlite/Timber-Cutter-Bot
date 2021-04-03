@@ -75,7 +75,7 @@ bot.on('message', message => {
       return;
     }
     else {
-      message.reply('Why have you disturbed my slumber mortal?\n👿');
+      message.reply('Why have you disturbed my slumber, mortal?\n👿');
     }
   }
     
