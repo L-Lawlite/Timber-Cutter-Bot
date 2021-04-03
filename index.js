@@ -17,7 +17,7 @@ Master_id=["228141283175038977","536249458065670154"];
 async function check_master(msg){
   for(const masters of Master_id){
     if(msg.author.id == masters)
-      return masters;
+      return 1;
   
   return 0;
   }
