@@ -68,7 +68,7 @@ bot.on('message', message => {
   //checks	if message is send by this bot if yes terminate the program
 	if (message.author.bot) return;
 
-  if(message.mentions.has(bot.user))
+  if(message.mentions.has(bot.user)){
     const summoner = check_master(message);
     if(summoner){
       message.channel.send('you summoned me, Master?🙇');
@@ -76,9 +76,8 @@ bot.on('message', message => {
     }
     else {
       message.reply('Why have you disturbed my slumber mortal?\n👿');
-      break;
     }
-  
+  }
     
 
   //loads the command after removing prefix
