@@ -63,7 +63,7 @@ bot.on('message', message => {
   for (const Masters of Master_id) {
     if(message.author.id == Masters){
       message.channel.send('you summoned me, Master?🙇');
-      continue;
+      return;
     }
     else {
       message.reply('Why have you disturbed my slumber mortal?\n👿');
