@@ -17,8 +17,9 @@ Master_id=["228141283175038977","536249458065670154"];
 async function check_master(msg){
   for(const masters of Master_id)
     if(msg.author.id == masters)
-      return 1;
-  return 0;
+      return 'you summoned me, Master?🙇';
+  
+  return `${msg.author.toString()}, Why have you disturbed my slumber, mortal?\n👿`;
   
 
 }
@@ -70,14 +71,9 @@ bot.on('message', message => {
   if(message.mentions.has(bot.user)){
     check_master(message)
       .then(result =>{
-        if(result == 1){
-          message.channel.send('you summoned me, Master?🙇');
-          return;
-        }
-        else {
-          message.reply('Why have you disturbed my slumber, mortal?\n👿');
-        }
-      }) 
+        message.channel.send(result);
+        return;
+      });
   }
     
 
