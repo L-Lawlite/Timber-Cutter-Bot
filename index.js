@@ -48,17 +48,17 @@ bot.on('ready',async () =>{
     }
   },1000*60*10);
 
-  await mongo().then(mongoose => {
-    try {
-      console.log('connected to database');
-    }
-    catch(e){
-      console.log(e);
-    } 
-    finally {
-      mongoose.connection.close();
-    }
-  });
+  // await mongo().then(mongoose => {
+  //   try {
+  //     console.log('connected to database');
+  //   }
+  //   catch(e){
+  //     console.log(e);
+  //   } 
+  //   finally {
+  //     mongoose.connection.close();
+  //   }
+  // });
 
 })
 
