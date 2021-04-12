@@ -1,4 +1,5 @@
 {
   "prefix": "??",
-  "token" : "NzI4ODQyNjE3NzA1NzI2MDI2.XxKvDA.r86x2tPBJyVUEp31IBMX23rmIRg"
+  "token" : "NzI4ODQyNjE3NzA1NzI2MDI2.XxKvDA.r86x2tPBJyVUEp31IBMX23rmIRg",
+  "mongoPath": "mongodb+srv://Lawliet84:JM!MqMz2QJb!-jU@dbsm.gs6mh.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 }

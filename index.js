@@ -6,6 +6,9 @@ const Discord = require('discord.js');
 //import prefix and token from config.json
 const { prefix , token} = require('./config.json');
 
+const mongo = require('./mongo');
+const { Console } = require('console');
+
 //create a new Client named bot
 const bot = new Discord.Client();
 //takes command
@@ -31,7 +34,7 @@ bot.faqs = new Discord.Collection();
 const faqName = fs.readdirSync('./commands/faq').filter(file => file.endsWith('.js'));
 
 //displays the message "This bot is online!" on console log
-bot.on('ready',() =>{
+bot.on('ready',async () =>{
   console.log(`${bot.user.tag} is online!`);
   setInterval(async function(){
     try{
@@ -44,6 +47,18 @@ bot.on('ready',() =>{
       console.log('unable to update status');
     }
   },1000*60*10);
+
+  await mongo().then(mongoose => {
+    try {
+      console.log('connected to database');
+    }
+    catch(e){
+      console.log(e);
+    } 
+    finally {
+      mongoose.connection.close();
+    }
+  });
 
 })
 
