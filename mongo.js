@@ -3,7 +3,8 @@ const { mongoPath } = require('./config.json');
 
 module.exports = async () => {
     await mongoose.connect(mongoPath, {
-        useUnifiedTopology: true
+        useUnifiedTopology: true,
+        useNewUrlParser: true 
     });
     return mongoose;
 }
