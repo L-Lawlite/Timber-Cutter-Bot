@@ -20,7 +20,7 @@ Master_id=["228141283175038977","536249458065670154"];
 async function check_master(msg){
   for(const masters of Master_id)
     if(msg.author.id == masters)
-      return 'you summoned me, Master?🙇';
+      return 'you summoned me, Master🙇';
   
   return `${msg.author.toString()}, Why have you disturbed my slumber, mortal?\n👿`;
   
