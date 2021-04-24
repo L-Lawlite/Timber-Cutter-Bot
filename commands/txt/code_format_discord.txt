@@ -17,6 +17,10 @@ example
 execute as @a[tag=<your tag>] at @s run function namespace:say_hi
 \`\`\`
 
+```elixir
+execute as @a[tag=<your tag>] at @s run function namespace:say_hi
+```
+
 **Multi-line code block with language syntax highlighting**
 \`\`\`json
 {
