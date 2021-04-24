@@ -5,10 +5,17 @@ When putting commands (and other code, like json) in Discord, it's wise to put t
 `example`
 
 **Multi-line code block**
-\`\`\`example\`\`\`
+\`\`\`
+example
+\`\`\`
 ```
 example
 ```
+
+**Good syntax highlighting for mcfunction**
+\`\`\`elixir
+execute as @a[tag=<your tag>] at @s run function namespace:say_hi
+\`\`\`
 
 **Multi-line code block with language syntax highlighting**
 \`\`\`json
