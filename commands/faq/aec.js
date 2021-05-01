@@ -6,6 +6,6 @@ module.exports = {
 	execute(message, args) {
     const embed = new Discord.MessageEmbed()
     .setColor('#0099ff');
-
+    return message.channel.send(embed);
 	},
 };
