@@ -15,7 +15,7 @@ module.exports = {
         return message.channel.send(faqEmbed);
     }
 
-    const name = args[1].toLowercase();
+    const name = args[1];
     console.log(args); 
     console.log(name);
     
