@@ -15,7 +15,7 @@ module.exports = {
         return message.channel.send(helpEmbed);
     }
 
-    const newArgs = args.toString().slice('faq').trim().split(/ +/);
+    const newArgs = args[1]
     console.log(newArgs); 
     
 	},
