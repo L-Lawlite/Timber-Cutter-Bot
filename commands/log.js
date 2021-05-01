@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const image = 'https://github.com/L-Lawlite/Timber-Cutter-Bot/blob/master/commands/images/Log.JPG'
+const image = require('./images/Log.JPG')
 module.exports = {
   name: 'log',
 	description: 'Tells how to activate log!',
