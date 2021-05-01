@@ -10,7 +10,7 @@ module.exports = {
 			var faqName = faqs.map(faq => faq.name);
 			var desc = faqs.map(faq => faq.description);
 			for(var i=0; i<faqName.length; i++){
-				faq.setDescription(`**${faqName[i]}**\n${desc[i]}`);
+				faqEmbed.setDescription(`**${faqName[i]}**\n${desc[i]}`);
 			}
         return message.channel.send(helpEmbed);
     }
