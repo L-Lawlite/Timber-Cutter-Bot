@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const image = require('./images/Log.JPG')
+const image = 'https://drive.google.com/file/d/14cptCLHvWolk3s6qbxFy28vm4PQGk7FW/view?usp=sharing'
 module.exports = {
   name: 'log',
 	description: 'Tells how to activate log!',
