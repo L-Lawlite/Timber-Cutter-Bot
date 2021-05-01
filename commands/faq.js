@@ -17,7 +17,7 @@ module.exports = {
 
     const name = args[1].toLowercase();
     console.log(args); 
-    console.log()
+    console.log(name);
     
 	},
 };
