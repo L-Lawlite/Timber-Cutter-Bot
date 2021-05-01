@@ -12,7 +12,7 @@ module.exports = {
 			for(var i=0; i<faqName.length; i++){
 				faqEmbed.setDescription(`**${faqName[i]}**\n${desc[i]}`);
 			}
-        return message.channel.send(helpEmbed);
+        return message.channel.send(faqEmbed);
     }
 
     const name = args[1].toLowercase();
