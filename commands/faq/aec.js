@@ -5,7 +5,8 @@ module.exports = {
 	description: 'AEC(area effect cloud) faq',
 	execute(message, args) {
     const embed = new Discord.MessageEmbed()
-    .setColor('#0099ff');
+    .setColor('#0099ff')
+    .setTitle('Aera Effect Cloud');
     return message.channel.send(embed);
 	},
 };
