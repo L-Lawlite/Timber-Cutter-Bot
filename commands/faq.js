@@ -5,7 +5,7 @@ module.exports = {
 	execute(message, args) {
     const { faqs } = message.client;
     const faqEmbed = new Discord.MessageEmbed();
-    if(!args[1].length){
+    if(!args.length){
         faqEmbed.setTitle('Here\'s a list of all my faqs:\n');
 			var faqName = faqs.map(faq => faq.name);
 			var desc = faqs.map(faq => faq.description);
