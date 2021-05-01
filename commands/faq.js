@@ -15,7 +15,7 @@ module.exports = {
         return message.channel.send(faqEmbed);
     }
 
-    const faqNames = args;
+    const faqNames = args.shift().toLowerCase();
     const faq = faqs.get(faqNames)
   		|| faqs.find(cmd => cmd.aliases && cmd.aliases.includes(faqNames));
     if(!faq)
