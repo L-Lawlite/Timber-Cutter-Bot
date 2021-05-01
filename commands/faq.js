@@ -15,9 +15,9 @@ module.exports = {
         return message.channel.send(faqEmbed);
     }
 
-    const faqName = args;
-    const faq = faqs.get(faqName)
-  		|| faqs.find(cmd => cmd.aliases && cmd.aliases.includes(faqName));
+    const faqNames = args;
+    const faq = faqs.get(faqNames)
+  		|| faqs.find(cmd => cmd.aliases && cmd.aliases.includes(faqNames));
     if(!faq)
         return message.reply('invalid faq id');
     try {
