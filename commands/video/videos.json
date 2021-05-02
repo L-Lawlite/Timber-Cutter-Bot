@@ -67,5 +67,10 @@
     "name":["custom_helmet","helmet","ch"],
     "description":"Custom Helmets, by SteroidUnicorn!",
     "url":"https://youtu.be/ynLJfk5te3g"
+  }, 
+  {
+    "name":["entity_count","count_entities"],
+    "description":"Entity counting and detecting, by CloudWolf!",
+    "url":"https://youtu.be/bpz41ytPSP0"
   }
 ]
