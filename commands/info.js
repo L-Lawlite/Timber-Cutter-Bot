@@ -13,7 +13,7 @@ module.exports = {
 			for(var i=0; i<faqName.length; i++){
 				data[i] = `**${faqName[i]}**\n${desc[i]}`;
 			}
-            faqEmbed.setDescription(data.join('\n'));
+            faqEmbed.setDescription(data.join('\n\n'));
         return message.channel.send(faqEmbed);
     }
 
