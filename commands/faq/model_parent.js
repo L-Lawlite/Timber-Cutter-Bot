@@ -7,7 +7,7 @@ module.exports = {
     const embed = new Discord.MessageEmbed()
     .setColor('#0099ff')
     .setTitle('Model Parent')
-    .setFotter('Made by Nope#1730');
+    .setFooter('Made by Nope#1730');
     embed.setDescription(`When deciding on a parent item, you need to figure out what item you're using
     the default generic parent items are \`item/generated\`, \`item/handheld\`, and \`item/handheld_rod\` for most items, along with five template parent items for their own specific items (for banners, beds, skulls, shulker boxes, and spawn eggs respectively). For some items, the parent is builtin/entity, two items of note being the shield and the trident, only the former of which can allow custom model data.
 
