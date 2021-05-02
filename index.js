@@ -79,6 +79,7 @@ const cooldowns = new Discord.Collection();
 bot.on('message', message => {
   //checks	if message is send by this bot if yes terminate the program
 	if (message.author.bot) return;
+  if (message.author.id == `745169930013638679`) return;
 
   if(message.mentions.has(bot.user)){
     check_master(message)
