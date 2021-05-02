@@ -4,7 +4,7 @@ const {prefix} = require('../../config.json');
 module.exports = {
   name: 'custom_model_armor',
   aliases:['custom_model_elytra','custom_model_playerhead','custom_model_skull','custom_model_helmet'],
-	description: 'Why Custom Armor model not possible and How can u make custom helmet',
+	description: 'Why Custom Armor model not possible and how can u make custom helmet',
 	execute(message, args) {
     const embed = new Discord.MessageEmbed()
     .setColor('#0099ff')
