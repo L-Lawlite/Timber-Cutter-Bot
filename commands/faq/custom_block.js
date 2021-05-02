@@ -2,8 +2,8 @@ const Discord = require('discord.js');
 const {prefix} = require('.../config.json')
 
 module.exports = {
-  name: 'custom_throwable',
-	description: 'Details about custom model of throwable object',
+  name: 'custom_blocks',
+	description: 'Details about custom model of Blocks',
 	execute(message, args) {
     const embed = new Discord.MessageEmbed()
     .setColor('#0099ff')
