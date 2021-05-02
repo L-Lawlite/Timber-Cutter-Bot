@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 module.exports = {
   name: 'custom_model_bows',
-  aliases:["custom_model_crossbows,custom_model_shields,custom_model_compass,custom_model_clocks"],
+  aliases:['custom_model_crossbows','custom_model_shields','custom_model_compass','custom_model_clocks'],
 	description: 'Details about custom model of Bows,Crossbows,Shields,Compass and Clocks',
 	execute(message, args) {
     const embed = new Discord.MessageEmbed()
