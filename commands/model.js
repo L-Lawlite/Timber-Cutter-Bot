@@ -74,6 +74,8 @@ module.exports = {
         });
         return;
       default:
+        message.channel.send(`You didn't provide any arguments, <@${message.author.id}>
+        The proper usage would be: ${prefix}model error/help/details`)
         return;
 
     }
