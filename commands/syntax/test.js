@@ -11,19 +11,19 @@ module.exports = {
     \`\`\`json
       {
         "pack": {
-          "pack_format": <number>`+'[1]'.sup()+` ,
-          "description": "<Your Desription>"`+`[2]`.sup()+`
+          "pack_format": <number>⁽¹⁾,
+          "description": "<Your Desription>⁽²⁾"
         }
       }
     \`\`\`
     
-    `+`[1]`.sup()+` Pack Format number is:
+    ⁽¹⁾ : Pack Format number is:
     4 for 1.14
     5 for 1.15
     6 for 1.16
     7 for 1.17
 
-    `+`[2]`.sup()+` any string
+    ⁽²⁾: any string
     `)
     return message.channel.send(embed);
 	},
