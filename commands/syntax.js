@@ -9,8 +9,8 @@ module.exports = {
     var data = [];
     if(!args.length){
         syntaxEmbed.setTitle('Here\'s a list of all my Syntax:\n');
-			var syntaxName = Syntax.map(syntax => syntax.name);
-			var desc = Syntax.map(syntax => syntax.description);
+			var syntaxName = syntax.map(syntax => syntax.name);
+			var desc = syntax.map(syntax => syntax.description);
 			for(var i=0; i<syntaxName.length; i++){
 				data[i] = `**${syntaxName[i]}**\n${desc[i]}`;
 			}
