@@ -2,6 +2,7 @@ const Discord = require('discord.js');
 module.exports = {
 	name: 'info',
 	description: 'Some useful information',
+    usage:'[Topic]',
 	execute(message, args) {
     const { faqs } = message.client;
     const faqEmbed = new Discord.MessageEmbed();
