@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 module.exports = {
-	name: 'Syntax',
+	name: 'syntax',
 	description: 'Some useful Syntax of commands or files',
     usage:'[Topic]',
 	execute(message, args) {
