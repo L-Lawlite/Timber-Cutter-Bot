@@ -7,7 +7,7 @@ module.exports = {
 	execute(message, args) {
     const embed = new Discord.MessageEmbed()
     .setColor('#ff4500')
-    .setTitle(`${args[0].toSting()}`);
+    .setTitle(`tick.json or load.json`);
     embed.setDescription(`
     \`\`\`json
     {
