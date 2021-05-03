@@ -6,7 +6,7 @@ module.exports = {
 	execute(message, args) {
     const embed = new Discord.MessageEmbed()
     .setColor('#ff4500')
-    .setTitle('Custom Model of Throwable Object');
+    .setTitle('pack.mcmeta');
     embed.setDescription(`
     \`\`\`json
       {
