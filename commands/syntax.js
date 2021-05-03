@@ -19,12 +19,12 @@ module.exports = {
     }
 
     const Syntax_names = args.shift().toLowerCase();
-    const syntax = Syntax.get(Syntax_names)
+    const syntaxCheck = Syntax.get(Syntax_names)
   		|| Syntax.find(cmd => cmd.aliases && cmd.aliases.includes(Syntax_names));
-    if(!syntax)
+    if(!syntaxCheck)
         return message.reply('invalid syntax id');
     try {
-        syntax.execute(message,args);
+        syntaxCheck.execute(message,args);
     }
    catch (error) {
         console.error(error);
