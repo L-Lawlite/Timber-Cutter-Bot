@@ -24,7 +24,9 @@ module.exports = {
     For more details [click here!](https://minecraft.fandom.com/wiki/Coordinates) 
     `)
     .setImage('https://static.wikia.nocookie.net/minecraft_gamepedia/images/5/51/Coordinates.png/revision/latest/scale-to-width-down/200?cb=20200729013357')
-    .setThumbnail('https://static.wikia.nocookie.net/minecraft_gamepedia/images/e/e9/Minecraft_axes.png/revision/latest/scale-to-width-down/180?cb=20181111214433')
+    .setThumbnail('https://static.wikia.nocookie.net/minecraft_gamepedia/images/e/e9/Minecraft_axes.png/revision/latest/scale-to-width-down/180?cb=20181111214433');
+    console.log(args);
+
     return message.channel.send(embed);
 	},
 };
