@@ -8,8 +8,8 @@ module.exports = {
 	execute(message, args) {
     const embed1 = new Discord.MessageEmbed()
     .setColor('#0099ff');
-    var embed2 = new Discord.MessageEmbed();
-    embed2=embed1;
+    const embed2 = new Discord.MessageEmbed()
+    .setColor('#0099ff');
     embed1.setTitle('Relative world coordinates: Tilde notation(~)')
     .setDescription(`
     Ordinarily, position arguments are expressed as a set of three absolute world coordinates (X Y Z), each number representing a distance along an axis from the world origin.For more details use \`${prefix}info coordiantes\`.
