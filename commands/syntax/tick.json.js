@@ -20,8 +20,6 @@ module.exports = {
       }
     \`\`\`
     `);
-      console.log(message);
-      console.log(args);
     return message.channel.send(embed);
 
 	},
