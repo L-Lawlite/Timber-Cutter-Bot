@@ -8,7 +8,7 @@ module.exports = {
 	execute(message, args) {
     const embed1 = new Discord.MessageEmbed()
     .setColor('#0099ff');
-    let embed2 = new Discord.MessageEmbed();
+    var embed2 = new Discord.MessageEmbed();
     embed2=embed1;
     embed1.setTitle('Relative world coordinates: Tilde notation(~)')
     .setDescription(`
