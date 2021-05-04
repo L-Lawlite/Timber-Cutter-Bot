@@ -10,7 +10,7 @@ module.exports = {
     .setColor('#0099ff');
     const embed2 = new Discord.MessageEmbed()
     .setColor('#0099ff');
-    
+
     embed1.setTitle('Relative world coordinates: Tilde notation(~)')
     .setDescription(`
     Ordinarily, position arguments are expressed as a set of three absolute world coordinates (X Y Z), each number representing a distance along an axis from the world origin.For more details use \`${prefix}info coordiantes\`.
@@ -23,6 +23,7 @@ module.exports = {
 
     The \`execute\` command can update a command's current position, changing the meaning of \`~ ~ ~\`.
     `);
+    
     embed2.setTitle(`Local coordinates: Caret notation(^)`)
     .setDescription(`
     The other way to describe positions is with *local coordinates*, written entirely in *caret notation* (\`^ΔXlocal ^ΔYlocal ^ΔZlocal\`). Like relative coordinates, these describe positions relative to where a command is executed from, but with different directions. A number following a [caret](https://en.wikipedia.org/wiki/caret) (^) is an offset within a moving, entity-centric frame: This coordinate system is centered at the sender's feet, with \`+Xlocal\` directed to its left, \`+Ylocal\` directed upward, and \`+Zlocal\` directed in the direction the sender faces. (Note that an entity with rotation 0 0 has its local frame aligned with the world frame.)
