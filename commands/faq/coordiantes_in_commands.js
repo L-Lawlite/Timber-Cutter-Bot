@@ -3,7 +3,7 @@ const {prefix} = require('../../config.json');
 
 module.exports = {
   name: 'coordiantes_in_commands',
-  aliases:['local_coordinates','relative_coodinates','coods_in_commands','coordinates_in_cmds','coods_in_cmds','local_coods','relative_coods','rel_coods','loc_coods'],
+  aliases:['local_coordinates','relative_coordinates','coods_in_commands','coordinates_in_cmds','coods_in_cmds','local_coods','relative_coods','rel_coods','loc_coods'],
 	description: 'Details about cartesian cordinate system in minecraft',
 	execute(message, args) {
     const embed = new Discord.MessageEmbed()
