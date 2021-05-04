@@ -1,9 +1,9 @@
 const Discord = require('discord.js');
 
 module.exports = {
-  name: 'coordiantes',
-  aliases:['coods'],
-	description: 'Details about cartesian cordinate system in minecraft',
+  name: 'coordinates',
+  aliases:['coords'],
+	description: 'Details about cartesian coordinate system in minecraft',
 	execute(message, args) {
     const embed = new Discord.MessageEmbed()
     .setColor('#0099ff')

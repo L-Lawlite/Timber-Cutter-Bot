@@ -2,15 +2,16 @@ const Discord = require('discord.js');
 const {prefix} = require('../../config.json');
 
 module.exports = {
-  name: 'coordiantes_in_commands',
-  aliases:['local_coordinates','relative_coordinates','coods_in_commands','coordinates_in_cmds','coods_in_cmds','local_coods','relative_coods','rel_coods','loc_coods'],
-	description: 'Details about cartesian cordinate system in minecraft',
+  name: 'coordinates_in_commands',
+  aliases:['local_coordinates','relative_coordinates','coords_in_commands','coordinates_in_cmds','coords_in_cmds','local_coords','relative_coords','rel_coords','loc_coords'],
+	description: 'Details about Relative and Local Coordinates ',
 	execute(message, args) {
-    const embed = new Discord.MessageEmbed()
-    .setColor('#0099ff')
-    .setTitle('Coordinates')
-    embed.setDescription(`
-    **Relative world coordinates: Tilde notation(~)**
+    const embed1 = new Discord.MessageEmbed()
+    .setColor('#0099ff');
+    const embed2 = new Discord.MessageEmbed();
+    embed2=embed1;
+    embed1.setTitle('Relative world coordinates: Tilde notation(~)')
+    .setDescription(`
     Ordinarily, position arguments are expressed as a set of three absolute world coordinates (X Y Z), each number representing a distance along an axis from the world origin.For more details use \`${prefix}info coordiantes\`.
 
     Each coordinate can alternatively be expressed as a *relative world coordinate*, written in *tilde notation* (~ΔX ~ΔY ~ΔZ). A number following a [tilde](https://en.wikipedia.org/wiki/tilde) (~) describes an offset from execution position along one of the world axes, and a lone tilde assumes an offset of 0; for example, the position \`~10 ~ ~-30\` means \`10 blocks east (+X) and 30 blocks north (–Z) of here\`.
@@ -20,9 +21,9 @@ module.exports = {
     Relative world coordinates can mix with absolute coordinates; for example, \`tp ~ 64 ~\` keeps the sender's X and Z positions unchanged but teleports them to an absolute height of 64 blocks.
 
     The \`execute\` command can update a command's current position, changing the meaning of \`~ ~ ~\`.
-
-
-    **Local coordinates: Caret notation(^)**
+    `);
+    embed2.setTitle(`Local coordinates: Caret notation(^)`)
+    .setDescription(`
     The other way to describe positions is with *local coordinates*, written entirely in *caret notation* (\`^ΔXlocal ^ΔYlocal ^ΔZlocal\`). Like relative coordinates, these describe positions relative to where a command is executed from, but with different directions. A number following a [caret](https://en.wikipedia.org/wiki/caret) (^) is an offset within a moving, entity-centric frame: This coordinate system is centered at the sender's feet, with \`+Xlocal\` directed to its left, \`+Ylocal\` directed upward, and \`+Zlocal\` directed in the direction the sender faces. (Note that an entity with rotation 0 0 has its local frame aligned with the world frame.)
 
     Described in other terms, these coordinates express \`^ΔSway ^ΔHeave ^ΔSurge\`
@@ -40,6 +41,8 @@ module.exports = {
 
     For more details [click here!](https://minecraft.fandom.com/wiki/Commands#Relative_world_coordinates:_Tilde_notation) 
     `);
-    return message.channel.send(embed);
+
+    message.channel.send(embed1);
+    message.channel.send(embed2);
 	},
 };
