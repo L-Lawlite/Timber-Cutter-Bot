@@ -11,7 +11,7 @@ module.exports = {
     const embed2 = new Discord.MessageEmbed()
     .setColor('#0099ff');
     
-    let targetArguments=['Position','distance','volume','scores','team','limit','level','gamemode','name','rotation','type','tag','nbt','advancement','predicate'];
+    let targetArguments=['position','distance','volume','scores','team','limit','level','gamemode','name','rotation','type','tag','nbt','advancement','predicate'];
 
     if(!args.length){
         embed1.setTitle('Target selector')
@@ -57,10 +57,10 @@ module.exports = {
         return;
     }
 
-    targetArgument = targetArguments.toLowercase();
+    
     switch(args.toLowercase())
     {
-      case targetArgument[0]:{
+      case targetArguments[0]:{
         embed1.setTitle('Position arguments')
         .setDescription(`
         \`[x=<value>,y=<value>,z=<value>]\`
@@ -69,7 +69,7 @@ module.exports = {
         `);
         break;
       }
-      case targetArgument[1]:{
+      case targetArguments[1]:{
         embed1.setTitle('Selecting targets by distance')
         .setDescription(`
         Filter target selection based on their Euclidean distances from some point, searching for the target's feet (a point at the bottom of the center of their hitbox). If the positional arguments are left undefined, radius is calculated relative to the position of the command's execution. Cannot duplicate this argument.
