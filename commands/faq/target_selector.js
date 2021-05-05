@@ -60,6 +60,7 @@ module.exports = {
     
     switch(args.toString().toLowerCase())
     {
+
       case targetArguments[0]:{
         embed1.setTitle('Position arguments')
         .setDescription(`
@@ -69,6 +70,7 @@ module.exports = {
         `);
         break;
       }
+
       case targetArguments[1]:{
         embed1.setTitle('Selecting targets by distance')
         .setDescription(`
@@ -83,6 +85,79 @@ module.exports = {
         `);
         break;
       }
+
+      case targetArguments[2]:{
+        embed1.setTitle('Selecting targets by volume')
+        .setDescription(`
+        \`[dx=<value>,dy=<value>,dz=<value>]\` - Filter target selection based on their x-difference, y-difference, and z-difference from some point, as measured from the closest corner of the entities' hitboxes. Cannot duplicate any one of these three arguments.
+        This can be interpreted as creating a rectangular volume defined by an initial position (<x>,<y>,<z>) and diagonal vector (<dx>,<dy>,<dz>), then selecting all entities whose hitboxes are at least partially contained by that volume‌. If the positional arguments are left out, the selection is interpreted as originating from the position of the command's execution. Any values are allowed, including signed and fractional numbers.
+        Note that \`dx\`,\`dy\`,\`dz\` specify signed differences from the given coordinate. They do not specify a separate coordinate, nor do they extend in both the positive and negative directions.
+
+        Examples:\`\`\`elixir
+@e[x=1,dx=4,y=2,dy=5,z=3,dz=6] — Select all entities whose hitbox collides with the block region (1~5, 2~7, 3~9) (or, mathematically speaking, the region that is {(x,y,z)∈R³|x∈[1.0,5.0),y∈[2.0,7.0),z∈[3.0,9.0)}).
+@e[x=1,y=2,z=3,dx=0,dy=0,dz=0] — Select all entities whose hitbox contains the point (1,2,3).
+        \`\`\`
+        It is possible to combine selection by distance and selection by volume, in which case the command select targets only within the overlap of both regions (within a certain radius/I of the volume's initial point and not outside the defined volume).
+        `);
+        break;
+      }
+      
+      case targetArguments[3]:{
+        embed1.setTitle('Selecting targets by scores')
+        .setDescription(`
+        \`[scores={<objective>=<value>,...}]\` - Filter target selection based on their scores in the specified objectives. Cannot duplicate this argument.
+All tested objectives are in a single tag, with a list of individual score selectors between braces afterward. The selectors inside the braces support ranges.
+\`\`\`elixir
+@e[scores={myscore=10}] — Select all entities with a score in objective myscore of exactly ten.
+@e[scores={myscore=10..12}] — Select all entities with a score in objective myscore of between ten and 12 (inclusive).
+@e[scores={myscore=5..}] — Select all entities with a score in objective myscore of five or greater.
+@e[scores={myscore=..15}] — Select all entities with a score in objective myscore of 15 or less.
+@e[scores={foo=10,bar=1..5}] — Select all entities with a score in objective foo of exactly ten, and a score in objective bar of between one and five (inclusive).
+\`\`\`
+        For more details about scoreboard objectives [click here](https://minecraft.fandom.com/wiki/Scoreboard#Objectives)
+        `);
+        break;
+      }
+
+      case targetArguments[4]:{
+        embed1.setTitle('Selecting targets by team')
+        .setDescription(`
+        Cannot duplicate this argument.
+\`\`\`elixir
+[team=<teamName>] - Filter target selection to those who are on a given team.
+[team=!<teamName>] — Filter to those who are not on a given team.
+[team=] — Filter to those who are teamless.
+[team=!] — Filter to those who have some team.
+\`\`\`
+        For more details about teams [click here](https://minecraft.fandom.com/wiki/Scoreboard#Teams)
+        `);
+      }
+      case targetArguments[5]:
+      case 'sorting':
+      case 'sort':{
+        embed1.setTitle('Limiting and sorting target selection')
+        .setDescription(`
+        Cannot duplicate these arguments.
+        \`[limit=<value>] - Selects only the specified number of targets.\`
+        When using the variables @p and @r, this argument defaults to one. Applying the limiting argument to them may artificially increase the number of nearest or random targets selected. When applying this argument to @a or @e, this argument returns only a limited number of targets.
+\`\`\`elixir
+[limit=<value>,sort=(nearest|furthest|random|arbitrary)] - Limit the number of targets, and specify selection priority.
+sort=nearest — Sort by increasing distance. (Default for @p)
+sort=furthest — Sort by decreasing distance.
+sort=random — Sort randomly. (Default for @r)
+sort=arbitrary — Do not sort. (Default for @e, @a)
+\`\`\`
+
+Examples:
+\`\`\`elixir
+@a[limit=3,sort=nearest] or @p[limit=3] — Select the nearest three players.
+@a[limit=4,sort=furthest] — Select the furthest four players.
+@a[limit=2,sort=random] or @r[limit=2] — Select two players, chosen randomly.
+\`\`\`
+        
+        `);
+      }
+
 
     }
 
