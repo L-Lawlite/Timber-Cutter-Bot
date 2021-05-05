@@ -131,6 +131,7 @@ All tested objectives are in a single tag, with a list of individual score selec
 \`\`\`
         For more details about teams [click here](https://minecraft.fandom.com/wiki/Scoreboard#Teams)
         `);
+        break;
       }
       case targetArguments[5]:
       case 'sorting':
