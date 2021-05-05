@@ -76,9 +76,9 @@ module.exports = {
 
         **\`[distance=<value>]\`** - Specifies the range of distance. Only unsigned values are allowed. Ranges are supported to select a specific region:
         \`\`\`elixir
-        @e[distance=10] — Target all entities exactly ten blocks away.
-        @e[distance=8..16] — Target all entities more than eight blocks, but less than 16 blocks away (inclusive).
-        @e[distance=..16] — Target all entities between source and 16 blocks away (inclusive).
+@e[distance=10] — Target all entities exactly ten blocks away.
+@e[distance=8..16] — Target all entities more than eight blocks, but less than 16 blocks away (inclusive).
+@e[distance=..16] — Target all entities between source and 16 blocks away (inclusive).
         \`\`\`
         `);
         break;
