@@ -75,7 +75,8 @@ module.exports = {
         Filter target selection based on their Euclidean distances from some point, searching for the target's feet (a point at the bottom of the center of their hitbox). If the positional arguments are left undefined, radius is calculated relative to the position of the command's execution. Cannot duplicate this argument.
 
         **\`[distance=<value>]\`** - Specifies the range of distance. Only unsigned values are allowed. Ranges are supported to select a specific region:
-        \`\`\`@e[distance=10] — Target all entities exactly ten blocks away.
+        \`\`\`elixir
+        @e[distance=10] — Target all entities exactly ten blocks away.
         @e[distance=8..16] — Target all entities more than eight blocks, but less than 16 blocks away (inclusive).
         @e[distance=..16] — Target all entities between source and 16 blocks away (inclusive).
         \`\`\`
