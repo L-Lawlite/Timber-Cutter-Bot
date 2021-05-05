@@ -77,7 +77,7 @@ module.exports = {
         Filter target selection based on their Euclidean distances from some point, searching for the target's feet (a point at the bottom of the center of their hitbox). If the positional arguments are left undefined, radius is calculated relative to the position of the command's execution. Cannot duplicate this argument.
 
         **\`[distance=<value>]\`** - Specifies the range of distance. Only unsigned values are allowed. Ranges are supported to select a specific region:
-        \`\`\`elixir
+        \`\`\`ts
 @e[distance=10] — Target all entities exactly ten blocks away.
 @e[distance=8..16] — Target all entities more than eight blocks, but less than 16 blocks away (inclusive).
 @e[distance=..16] — Target all entities between source and 16 blocks away (inclusive).
@@ -93,7 +93,7 @@ module.exports = {
         This can be interpreted as creating a rectangular volume defined by an initial position (<x>,<y>,<z>) and diagonal vector (<dx>,<dy>,<dz>), then selecting all entities whose hitboxes are at least partially contained by that volume‌. If the positional arguments are left out, the selection is interpreted as originating from the position of the command's execution. Any values are allowed, including signed and fractional numbers.
         Note that \`dx\`,\`dy\`,\`dz\` specify signed differences from the given coordinate. They do not specify a separate coordinate, nor do they extend in both the positive and negative directions.
 
-        Examples:\`\`\`elixir
+        Examples:\`\`\`ts
 @e[x=1,dx=4,y=2,dy=5,z=3,dz=6] — Select all entities whose hitbox collides with the block region (1~5, 2~7, 3~9) (or, mathematically speaking, the region that is {(x,y,z)∈R³|x∈[1.0,5.0),y∈[2.0,7.0),z∈[3.0,9.0)}).
 @e[x=1,y=2,z=3,dx=0,dy=0,dz=0] — Select all entities whose hitbox contains the point (1,2,3).
         \`\`\`
@@ -107,7 +107,7 @@ module.exports = {
         .setDescription(`
         \`[scores={<objective>=<value>,...}]\` - Filter target selection based on their scores in the specified objectives. Cannot duplicate this argument.
 All tested objectives are in a single tag, with a list of individual score selectors between braces afterward. The selectors inside the braces support ranges.
-\`\`\`elixir
+\`\`\`ts
 @e[scores={myscore=10}] — Select all entities with a score in objective myscore of exactly ten.
 @e[scores={myscore=10..12}] — Select all entities with a score in objective myscore of between ten and 12 (inclusive).
 @e[scores={myscore=5..}] — Select all entities with a score in objective myscore of five or greater.
@@ -123,7 +123,7 @@ All tested objectives are in a single tag, with a list of individual score selec
         embed1.setTitle('Selecting targets by team')
         .setDescription(`
         Cannot duplicate this argument.
-\`\`\`elixir
+\`\`\`ts
 [team=<teamName>] - Filter target selection to those who are on a given team.
 [team=!<teamName>] — Filter to those who are not on a given team.
 [team=] — Filter to those who are teamless.
@@ -141,7 +141,7 @@ All tested objectives are in a single tag, with a list of individual score selec
         Cannot duplicate these arguments.
         \`[limit=<value>] - Selects only the specified number of targets.\`
         When using the variables @p and @r, this argument defaults to one. Applying the limiting argument to them may artificially increase the number of nearest or random targets selected. When applying this argument to @a or @e, this argument returns only a limited number of targets.
-\`\`\`elixir
+\`\`\`ts
 [limit=<value>,sort=(nearest|furthest|random|arbitrary)] - Limit the number of targets, and specify selection priority.
 sort=nearest — Sort by increasing distance. (Default for @p)
 sort=furthest — Sort by decreasing distance.
@@ -150,13 +150,25 @@ sort=arbitrary — Do not sort. (Default for @e, @a)
 \`\`\`
 
 Examples:
-\`\`\`elixir
+\`\`\`ts
 @a[limit=3,sort=nearest] or @p[limit=3] — Select the nearest three players.
 @a[limit=4,sort=furthest] — Select the furthest four players.
 @a[limit=2,sort=random] or @r[limit=2] — Select two players, chosen randomly.
 \`\`\`
         
         `);
+        break;
+      }
+      case targetArguments[6]:{
+        embed1.setTitle('Selected Target by experience level')
+        .setDescription(`
+        Filter target selection based on their experience levels. This naturally filters out all non-player targets.
+        \`[level=<value>]\`
+        Cannot duplicate this argument. This selector supports ranges:
+        \`\`\`ts
+
+        `);
+        break;
       }
 
 
