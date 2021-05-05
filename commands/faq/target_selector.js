@@ -57,9 +57,10 @@ module.exports = {
         return;
     }
 
-    switch(args)
+    targetArgument = targetArguments.toLowercase();
+    switch(args.toLowercase())
     {
-      case targetArguments[0]:{
+      case targetArgument[0]:{
         embed1.setTitle('Position arguments')
         .setDescription(`
         \`[x=<value>,y=<value>,z=<value>]\`
@@ -68,7 +69,7 @@ module.exports = {
         `);
         break;
       }
-      case targetArguments[1]:{
+      case targetArgument[1]:{
         embed1.setTitle('Selecting targets by distance')
         .setDescription(`
         Filter target selection based on their Euclidean distances from some point, searching for the target's feet (a point at the bottom of the center of their hitbox). If the positional arguments are left undefined, radius is calculated relative to the position of the command's execution. Cannot duplicate this argument.
