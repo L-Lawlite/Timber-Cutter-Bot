@@ -58,7 +58,7 @@ module.exports = {
     }
 
     
-    switch(args.toString().toLowercase())
+    switch(args.toString().toLowerCase())
     {
       case targetArguments[0]:{
         embed1.setTitle('Position arguments')
