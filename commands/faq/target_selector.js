@@ -173,6 +173,144 @@ Examples:
         `);
         break;
       }
+      case targetArguments[7]:{
+        embed1.setTitle('Selecting targets by game mode')
+        .setDescription(`
+        This naturally filters out all non-player targets. Cannot duplicate this argument.
+        \`\`\`ts
+[gamemode=<gamemodeName>] — Filter target selection to those who are in the specified game mode.
+[gamemode=!<gamemodeName>] — Filter target selection to those who are not in the specified game mode.
+\`\`\`
+Permitted values for <gamemodeName> are \`spectator\`, \`adventure\`, \`creative\`, and \`survival\`
+Examples:
+\`\`\`ts
+@a[gamemode=survival] — Select all players who are in Survival mode.
+@a[gamemode=!spectator] — Select all players who are not in Spectator mode.
+\`\`\`
+
+        `);
+        break;
+      }
+      case targetArguments[8]:{
+        embed1.setTitle('Selecting targets by name')
+        .setDescription(`
+        Cannot duplicate this argument.\`\`\`ts
+[name=<givenName>] — Filter target selection to all those with a given name.
+[name=!<givenName>] — Filter target selection to all those without a given name.
+\`\`\`
+This is a string, so spaces are allowed only if quotes are applied. This cannot be a JSON text compound.\`\`\`ts
+@e[name=!Steve] - Select all entities that are not named "Steve".
+\`\`\`
+        `);
+        break;
+      }
+      case targetArguments[9]:{
+        embed1.setTitle('Selecting targets by rotation')
+        .setDescription(`**Vertical**
+        Filter target selection based on their pitch, or more specifically their declination from the horizon, measured in degrees. Values range from -90 (straight up) to 0 (at the horizon) to +90 (straight down). Cannot duplicate this argument.
+        \`[x_rotation=<value>]\`
+This argument supports ranges:\`\`\`ts
+@e[x_rotation=0] — Select all entities that are looking directly at the horizon.
+@e[x_rotation=30..60] — Select all entities that are looking between 30° and 60° (inclusive) below the horizon.
+@e[x_rotation=45..] — Select all entities that are looking 45° or more below the horizon.
+@e[x_rotation=..0] — Select all entities that are looking at or above the horizon.
+\`\`\`
+**Horizontal**
+Filter target selection based on their rotation in the horizontal XZ-plane, measured clockwise in degrees from due south (or the positive Z direction). Values vary from -180 (facing due north) to -90 (facing due east) to 0 (facing due south) to +90 (facing due west) to +180 (facing due north again). Cannot duplicate this argument.
+\`[y_rotation=<value>]\`
+This argument supports ranges, and the maximum can reach values over 180. Some examples:\`\`\`ts
+@e[y_rotation=0] — Select all entities that are facing due south.
+@e[y_rotation=45] — Select all entities that are facing 45° west of south.
+@e[y_rotation=180..270] — Select all entities that are facing in the 90° between due north and due east (inclusive).
+@e[y_rotation=-90..0] — Select all entities that are facing in the 90° between due east and due south (inclusive).
+@e[y_rotation=-90..90] — Select all entities that are facing between due east and due west (inclusive), through south.
+@e[y_rotation=0..180] — Select all entities that are not facing at all east.
+\`\`\`
+        `);
+        break;
+
+      }
+      case targetArguments[10]:{
+        embed1.setTitle('Selecting targets by type')
+        .setDescription(`
+        \`[type=<entityType>]\` — Filter target selection to those of a specific entity type.
+\`[type=!<entityType>]\` — Filter target selection to those not of a specific entity type.
+The given entity type must be a valid [entity ID](https://minecraft.fandom.com/wiki/Namespaced_ID) or [entity type tag](https://minecraft.fandom.com/wiki/Tag#Entity_type_tags) used to identify different types of entities internally. The namespace can be left out if the ID is within the minecraft: namespace. (For example, creeper for creepers, minecart for regular minecarts, tnt for primed TNT, etc.) Entity IDs or tags are case-sensitive.
+Examples:\`\`\`ts
+@e[type=skeleton] — Select all skeletons.
+@e[type=!chicken,type=!cow] — Select all entities except chickens and cows.
+@e[type=#skeletons] — Select all skeletons, wither skeletons, and strays.‌
+\`\`\`
+        `);
+        break;
+      }
+      case targetArguments[11]:{
+        embed1.setTitle('Selecting targets by tag')
+        .setDescription(`
+        \`\`\`ts
+[tag=<string>] — Filter target selection to those that have at least one tag of the given name.
+[tag=!<string>] — Filter to those that have no tags of the given name.
+[tag=] — Filter to those that have exactly zero tags.
+[tag=!] — Filter to those that have at least one tag.
+\`\`\`
+
+Multiple tag arguments are allowed. All argument specifications must be fulfilled for an entity to be selected.\`\`\`ts
+@e[tag=a,tag=b,tag=!c] — Select all entities that have tags a and b, but not tag c.
+@r[tag=a] — Select one random player who has tag a.
+\`\`\`
+
+For more details about tag [click here](https://minecraft.fandom.com/wiki/Commands/tag)
+        `);
+        break;
+      }
+      case targetArguments[12]:{
+        embed1.setTitle('Selecting targets by NBT‌')
+        .setDescription(`
+        \`[nbt=<compoundTag>]\` — Select all targets that have the specified NBT. The NBT is written in its [command definition.](https://minecraft.fandom.com/wiki/NBT_format#TAG_definition)
+\`[nbt=!<compoundTag>]\` — Select all targets that does not have the specified NBT.
+For example:\`\`\`ts
+@a[nbt={OnGround:true}] — Select all players on the ground.
+@e[type=sheep,nbt={Color:0b}] — Select all sheep that are dyed white.
+@e[type=item,nbt={Item:{id:"minecraft:slime_ball"}}] — Selects all slime ball item entities.
+@e[nbt={Tags:[a,b]}] is the same as @e[tag=a,tag=b]. The latter is simpler and reduces CPU load.
+\`\`\`
+Note: When matching the string form of [namespaced IDs](https://minecraft.fandom.com/wiki/Namespaced_ID) within a tag, the namespace cannot be omitted.
+Hence \`@e[type=item,nbt={Item:{id:slime_ball}}]\` cannot find any item entities as the id field always contains a namespaced ID-converted string.
+        `);
+        break;
+      }
+      case targetArguments[13]:{
+embed1.setTitle('Selecting targets by advancements‌')
+.setDescription(`\`\`\`ts
+[advancements={<namespaced ID>=<bool>}] — Select all targets that match the specified advancement and value.
+[advancements={<namespaced ID>={<criteria>=<bool>}}] — Select all targets that match the specified advancement and value.
+\`\`\`
+The argument name is the advancement ID (namespace can be left out when namespaced minecraft). The value is true or false.
+For advancements with one criterion, testing for that criterion always gives the same results as testing for the advancement.
+\`\`\`
+@a[advancements={story/form_obsidian=true}] — Selects players who have achieved the advancement minecraft:story/form_obsidian.
+@a[advancements={story/form_obsidian=false}] — Selects players who haven't achieved the advancement minecraft:story/form_obsidian.
+@a[advancements={story/obtain_armor={iron_helmet=true}}] — Selects players who had armored with iron helmet. The selected players needn't be wearing iron helmet when selected, and needn't have achieved the advancement minecraft:story/obtain_armor.
+@a[advancements={story/follow_ender_eye=true}] is the same as @a[advancements={story/follow_ender_eye={in_stronghold=true}}].
+\`\`\`
+`);
+        break;
+      }
+      case targetArguments[14]:{
+        embed1.setTitle('')
+        .setDescription(`\`\`\`ts
+[predicate=<namespaced ID>] — Select all targets that match the specified predicate.
+[predicate=!<namespaced ID>] — Select all targets that fail to match the specified predicate.
+\`\`\`
+Examples:
+\`\`\`
+@a[predicate=example:test_predicate] — Selects players who match the example:test_predicate predicate.
+@e[predicate=example:test_predicate] — Selects entities who do not match the example:test_predicate predicate.
+execute at @a if predicate example:location_plains - Checks if the location command is executed matches the example:location_plains predicate or not.
+\`\`\`
+        `);
+        break;
+      }
 
 
     }
