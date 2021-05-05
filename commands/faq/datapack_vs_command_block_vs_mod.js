@@ -7,6 +7,7 @@ module.exports = {
 	execute(message, args) {
     const embed = new Discord.MessageEmbed()
     .setColor('#0099ff')
+    .setFooter('Made by GFTK#4227')
     .setTitle('Comparison between Datapack, Command block and Mods')
     .setDescription(`**----========Why datapacks are better than command blocks: ========----**
     1. Command blocks cause more lag in general
