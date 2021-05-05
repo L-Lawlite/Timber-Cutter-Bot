@@ -166,6 +166,9 @@ Examples:
         \`[level=<value>]\`
         Cannot duplicate this argument. This selector supports ranges:
         \`\`\`ts
+@a[level=10] — Select all players who have exactly ten levels.
+@a[level=8..16] — Select all players who have between eight and 16 levels (inclusive).
+\`\`\`
 
         `);
         break;
