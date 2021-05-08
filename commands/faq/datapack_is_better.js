@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 module.exports = {
   name: 'datapack_is_better',
-  aliases:['datapack_vs_command_blocks','dpc_is_better','datapack_vs_mod','dpc_comparison'],
+  aliases:['datapack_vs_command_blocks','dpc_is_better','datapack_vs_mod','dpc_comparison','dpc_vs_command_blocks','dpc_vs_cmd_blocks','dpc_vs_mods'],
 	description: 'Comparison between Datapack, Command block and Mods',
 	execute(message, args) {
     const embed = new Discord.MessageEmbed()
