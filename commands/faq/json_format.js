@@ -1,7 +1,8 @@
 const Discord = require('discord.js');
 
 module.exports = {
-  name: '',
+  name: 'json_formatting',
+  aliases:['json'],
 	description: 'Brief description about json formatting',
 	execute(message, args) {
     const embed = new Discord.MessageEmbed()
