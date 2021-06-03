@@ -16,6 +16,7 @@
                         📂 processor_list
                         📂 template_pool
                     📂 advancements
+                    📂 item_modifiers
                     📂 loot_tables
                     📂 functions
                     📂 predicates
