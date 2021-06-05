@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 module.exports = {
   name: 'log',
+  aliases:["logs"],
 	description: 'Tells how to activate log!',
 	execute(message, args) {
     const embed = new Discord.MessageEmbed()
