@@ -72,5 +72,16 @@
     "name":["entity_count","count_entities"],
     "description":"Entity counting and detecting, by CloudWolf!",
     "url":"https://youtu.be/bpz41ytPSP0"
+  },
+  {
+    "name":["advancement"],
+    "description":"Advancement Tutorial by BronGhast14!",
+    "url":"https://www.youtube.com/watch?v=JHVAiAoQGeo"
+  },
+  {
+    "name":["command","commands","cmd"],
+    "description":"All command in 15 min by CloudWolf!",
+    "note":"/replaceitem command is replaced by /item command in 1.17",
+    "url":"https://youtu.be/Bwf8moO1n_w"
   }
 ]
