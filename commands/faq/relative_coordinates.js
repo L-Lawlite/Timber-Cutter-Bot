@@ -1,5 +1,7 @@
 const Discord = require('discord.js');
 const {prefix} = require('../../config.json');
+const {color} = require('./info_config.json')
+
 
 module.exports = {
   name: 'coordinates_in_commands',
@@ -7,9 +9,9 @@ module.exports = {
 	description: 'Details about Relative and Local Coordinates ',
 	execute(message, args) {
     const embed1 = new Discord.MessageEmbed()
-    .setColor('#0099ff');
+    .setColor(color);
     const embed2 = new Discord.MessageEmbed()
-    .setColor('#0099ff');
+    .setColor(color);
 
     embed1.setTitle('Relative world coordinates: Tilde notation(~)')
     .setDescription(`

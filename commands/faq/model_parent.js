@@ -1,11 +1,12 @@
 const Discord = require('discord.js');
+const {color} = require('./info_config.json')
 
 module.exports = {
   name: 'model_parent',
 	description: 'Details about the parent of models used for Resource Pack',
 	execute(message, args) {
     const embed = new Discord.MessageEmbed()
-    .setColor('#0099ff')
+    .setColor(color)
     .setTitle('Model Parent')
     .setFooter('Made by Nope#1730');
     embed.setDescription(`When deciding on a parent item, you need to figure out what item you're using

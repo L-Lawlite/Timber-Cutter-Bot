@@ -1,4 +1,6 @@
 const Discord = require('discord.js');
+const {color} = require('./info_config.json')
+
 
 module.exports = {
   name: 'datapack_is_better',
@@ -6,11 +8,11 @@ module.exports = {
 	description: 'Comparison between Datapack, Command block and Mods',
 	execute(message, args) {
     const embed1 = new Discord.MessageEmbed()
-    .setColor('#0099ff')
+    .setColor(color)
     .setFooter('Made by GFTK#4227')
     .setTitle('Datapack vs Command block');
     const embed2 = new Discord.MessageEmbed()
-    .setColor('#0099ff')
+    .setColor(color)
     .setFooter('Made by GFTK#4227')
     .setTitle('Datapack vs Mods');
     embed1.setDescription(`**----========Why datapacks are better than command blocks: ========----**

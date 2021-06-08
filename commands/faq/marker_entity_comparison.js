@@ -1,4 +1,6 @@
 const Discord = require('discord.js');
+const {color} = require('./info_config.json')
+
 
 module.exports = {
   name: 'marker_entity_comparison',
@@ -6,7 +8,7 @@ module.exports = {
 	description: 'Comparison between different entities used as marker (Armor Stand, Area effect cloud and Marker(1.17 only))',
 	execute(message, args) {
     const embed = new Discord.MessageEmbed()
-    .setColor('#0099ff')
+    .setColor(color)
     .setTitle('Comparison between:')
     .setFooter('Made by GFTK#4227');
     embed.setDescription(`**Area Effect Cloud:** 

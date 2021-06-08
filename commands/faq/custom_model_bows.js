@@ -1,4 +1,6 @@
 const Discord = require('discord.js');
+const {color} = require('./info_config.json')
+
 
 module.exports = {
   name: 'custom_model_bows',
@@ -6,7 +8,7 @@ module.exports = {
 	description: 'Details about custom model of Bows,Crossbows,Shields,Compass and Clocks',
 	execute(message, args) {
     const embed = new Discord.MessageEmbed()
-    .setColor('#0099ff')
+    .setColor(color)
     .setTitle('Custom Model of Bows,Crossbows,Shields,Compass and Clocks')
     .setFooter('Made by Nope#1730');
     embed.setDescription(`The items noted above each have an animation inherent to the item itself, and thus have different code you need to remember when creating custom models.

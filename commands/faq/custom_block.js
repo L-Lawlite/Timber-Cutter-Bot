@@ -1,12 +1,14 @@
 const Discord = require('discord.js');
 const {prefix} = require('../../config.json')
+const {color} = require('./info_config.json')
+
 
 module.exports = {
   name: 'custom_blocks',
 	description: 'Details about custom model of Blocks',
 	execute(message, args) {
     const embed = new Discord.MessageEmbed()
-    .setColor('#0099ff')
+    .setColor(color)
     .setTitle('Custom model of Blocks')
     .setFooter('Made by Nope#1730');
     embed.setDescription(`Blocks, while they can technically support having custom models, a single block can only ever have one model. The only way to make a block have a custom model is to overwrite an existing block.

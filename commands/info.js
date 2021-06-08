@@ -1,11 +1,15 @@
 const Discord = require('discord.js');
+
+const {color} = require('./faq/info_config.json')
+
 module.exports = {
 	name: 'info',
 	description: 'Some useful information',
     usage:'[Topic]',
 	execute(message, args) {
     const { faqs } = message.client;
-    const faqEmbed = new Discord.MessageEmbed();
+    const faqEmbed = new Discord.MessageEmbed()
+        .setColor(color);
     var data = [];
     if(!args.length){
         faqEmbed.setTitle('Here\'s a list of all my faqs:\n');

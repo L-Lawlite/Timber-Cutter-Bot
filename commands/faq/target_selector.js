@@ -1,5 +1,7 @@
 const Discord = require('discord.js');
 const {prefix} = require('../../config.json')
+const {color} = require('./info_config.json')
+
 
 module.exports = {
   name: 'target_selector',
@@ -7,9 +9,9 @@ module.exports = {
 	description: 'Details of target Selector',
 	execute(message, args) {
     const embed1 = new Discord.MessageEmbed()
-    .setColor('#0099ff');
+    .setColor(color);
     const embed2 = new Discord.MessageEmbed()
-    .setColor('#0099ff');
+    .setColor(color);
     
     let targetArguments=['position','distance','volume','scores','team','limit','level','gamemode','name','rotation','type','tag','nbt','advancement','predicate'];
 

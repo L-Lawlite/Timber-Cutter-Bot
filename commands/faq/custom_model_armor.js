@@ -1,5 +1,7 @@
 const Discord = require('discord.js');
 const {prefix} = require('../../config.json');
+const {color} = require('./info_config.json')
+
 
 module.exports = {
   name: 'custom_model_armor',
@@ -7,7 +9,7 @@ module.exports = {
 	description: 'Why Custom Armor model not possible and how can u make custom helmet',
 	execute(message, args) {
     const embed = new Discord.MessageEmbed()
-    .setColor('#0099ff')
+    .setColor(color)
     .setTitle('Custom Model Armor')
     .setFooter('Made by Nope#1730');
     embed.setDescription(`• Armor, and by extension elytras, and mob/player skulls, are hardcoded into the game, and could technically be counted as their own entity that follows the player’s movements exactly. While the armor MODEL cannot support custom model data, the armor ITEM can, although adding custom models to the item will not in any way change the models for the armor that shows up on the player. This applies to the helmet and mob/player skulls as well, and this was noted for reasons I will explain next

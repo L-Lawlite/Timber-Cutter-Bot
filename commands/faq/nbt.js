@@ -1,11 +1,13 @@
 const Discord = require('discord.js');
+const {color} = require('./info_config.json')
+
 
 module.exports = {
   name: 'nbt',
 	description: 'Brief Description of nbt',
 	execute(message, args) {
     const embed = new Discord.MessageEmbed()
-    .setColor('#0099ff')
+    .setColor(color)
     .setTitle('Named Binary Tag (NBT)')
     embed.setDescription(`
     A data tag is a tree-shaped data structure that can be described starting with attribute-value pairs enclosed in curly braces. One common usage of data tags in Java Edition is in commands, used to specify complex data for any entity.
