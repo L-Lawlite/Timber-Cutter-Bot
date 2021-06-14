@@ -50,7 +50,7 @@ module.exports = {
        },
        {
 	 name:`Predicate Location Check Generator`,
-	 value:`[Predicate Generator](https://weaversong.github.io/)`
+	 value:`[Location Check Predicate](https://weaversong.github.io/) made by WeaverSong#7358`
        }
 
      );

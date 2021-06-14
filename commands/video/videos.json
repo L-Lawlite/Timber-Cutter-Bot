@@ -20,7 +20,7 @@
     "url":"https://www.youtube.com/playlist?list=PLi7Dhu-qOl8NQObbSPoDzJ4_7Auy-U2Gs"
   },
   {
-    "name":["custom_crafter","custom_crafting","floor_crafting","dispenser_crafting"],
+    "name":["custom_crafter","floor_crafting","dispenser_crafting"],
     "description":"Custom item crafting using many methods by TheFedora#5666 and Timber Forge",
     "url":"https://www.youtube.com/watch?v=9DkPcQf2uek",
     "url2":"https://youtu.be/0Qm_YWSdUyE"
@@ -59,7 +59,7 @@
   "url":"https://youtu.be/Pt7y6PNP6KY"
   },
   {
-    "name":["loottable","loot_table","lt"],
+    "name":["loot_table","loottable","lt","loot_tables"],
     "description":"Basics of Loot Tables by Timber Forge!",
     "url":"https://youtu.be/SFOGmKZ-jXs"
   },
@@ -88,5 +88,26 @@
     "name" : ["scoreboard_timer","easy_timer","schedule"],
     "description": "Scoreboard Timer by Timber Forge!",
     "url": "https://youtu.be/5PlCGMA0Bi0"
+  },
+  {
+    "name": ["rng_generator","rng","random_number"],
+    "description":"Simple Random Number Generator by Cloud Wolf!",
+    "url":"https://youtu.be/fzZASMieGn0"
+  },
+  {
+    "name":["crafting_using_advancement_method", "advancement_method_crafting","advancement_crafting","adv_craft"],
+    "description":"Custom Crafting using Advancement method by Timber Forge!",
+    "url":"https://youtu.be/Pt7y6PNP6KY"
+  },
+  {
+    "name":["looking_at_entity_predicate"],
+    "description":"Looking at entity predicate by Cloud Wolf!",
+    "url":"https://youtu.be/Mek5KVPrc_I"
+  },
+  {
+    "name":["smooth_rotation","homing_missile","following_entity"],
+    "description":"Concept of Smooth Rotation by Cloud Wolf!",
+    "url":" https://www.youtube.com/watch?v=xamAY7fpgeQ"
   }
+  
 ]
