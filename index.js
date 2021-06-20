@@ -36,6 +36,10 @@ const faqName = fs.readdirSync('./commands/faq').filter(file => file.endsWith('.
 bot.syntax = new Discord.Collection();
 const syntaxName = fs.readdirSync('./commands/syntax').filter(file => file.endsWith('.js'));
 
+bot.editors = new Discord.Collection();
+const editorName = fs.readdirSync('./commands/editor').filter(file => file.endsWith('.js'));
+
+
 //displays the message "This bot is online!" on console log
 bot.on('ready',async () =>{
   console.log(`${bot.user.tag} is online!`);
@@ -77,6 +81,11 @@ for (const file of faqName) {
 for (const file of syntaxName) {
 	const syntax = require(`./commands/syntax/${file}`);
 	bot.syntax.set(syntax.name, syntax);
+}
+
+for (const file of editorName) {
+	const editor = require(`./commands/editor/${file}`);
+	bot.editors.set(editor.name, editor);
 }
 
 //for cooldown operation if needed
