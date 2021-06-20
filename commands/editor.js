@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 
-const {color} = require('./editor/info_config.json')
+const {color} = require('./editor/editor_config.json')
 
 module.exports = {
 	name: 'editor',
