@@ -9,9 +9,9 @@ module.exports = {
 	execute(message, args) {
     const embed = new Discord.MessageEmbed()
     .setColor(color)
-    .setTitle('Custom Model of Throwable Object')
+    .setTitle('Visual Studio Code download')
     .setDescription(`
-    [vscode editor](https://code.visualstudio.com/download)
+    [VSCode](https://code.visualstudio.com/download)
 
     **VS Code plugins**
     [Data-pack Helper Plus](https://marketplace.visualstudio.com/items?itemName=SPGoding.datapack-language-server)
