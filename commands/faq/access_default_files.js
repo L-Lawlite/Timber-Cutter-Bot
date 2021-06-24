@@ -5,7 +5,7 @@ const {color} = require('./info_config.json')
 module.exports = {
   name: 'access_default_files',
 	description: 'Details about custom model of throwable object',
-    aliases:['access_default_file', 'access_minecraft_file','access_minecraft_files','access_file','access_files'],
+    aliases:['access_default_file', 'access_minecraft_file','access_minecraft_files','access_file','access_files','default_dpc','default_rpc','dpc_files','rpc_files'],
 	execute(message, args) {
     const embed = new Discord.MessageEmbed()
     .setColor(color)
