@@ -16,7 +16,7 @@ bot.commands = new Discord.Collection();
 
 
 
-Master_id=["228141283175038977","536249458065670154","847688315742060544"];
+Master_id=["228141283175038977","536249458065670154","847688315742060544", "719624459824267295", "523997461078081537"];
 async function check_master(msg){
   for(const masters of Master_id)
     if(msg.author.id == masters)
