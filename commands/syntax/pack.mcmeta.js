@@ -12,7 +12,7 @@ module.exports = {
       {
         "pack": {
           "pack_format": <number>⁽¹⁾,
-          "description": "<Your Desription>⁽²⁾"
+          "description": "<Your Description>⁽²⁾"
         }
       }
     \`\`\`
