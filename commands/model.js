@@ -6,7 +6,7 @@ module.exports = {
   name:'model',
   description:'List everything related to model',
   args: true,
-  usage: 'error/help/details',
+  usage: 'error/help/details/export',
   cooldown: 10,
   execute(message, args){
     const embed = new Discord.MessageEmbed();
@@ -73,7 +73,6 @@ module.exports = {
          message.channel.send(`${data}`);
         });
         return;
-        break;
       case 'export':
         message.channel.send({files:['./commands/images/export.png']});
         return;
