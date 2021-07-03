@@ -127,6 +127,13 @@ bot.on('message', message => {
     message.content.send(`https://mcstacker.net/`);
   }
 */
+  if(message.channel.name.startsWith(`🔑`) && message.content.startsWith(prefix)) {
+    message.reply('Commands are disabled in open help channel');
+    if(message.guild.id == '618187296474267680')
+      message.channel.send(`please use <#626224313002885120> for bot-commands `);
+    return;
+  }
+
   if(!message.content.startsWith(prefix)) return;
   //if not terminate the program
   if (!command) return;
