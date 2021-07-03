@@ -73,9 +73,9 @@ module.exports = {
          message.channel.send(`${data}`);
         });
         return;
-      case 'export':
+      case: 'export':
         message.channel.send({files:['./commands/images/export.png']});
-        break;
+        return;
       default:
         message.channel.send(`You didn't provide any arguments, <@${message.author.id}>\n The proper usage would be: ${prefix}model error/help/details/export`);
         return;
