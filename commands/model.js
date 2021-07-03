@@ -73,7 +73,8 @@ module.exports = {
          message.channel.send(`${data}`);
         });
         return;
-      case: 'export':
+        break;
+      case 'export':
         message.channel.send({files:['./commands/images/export.png']});
         return;
       default:
