@@ -96,7 +96,6 @@ const cooldowns = new Discord.Collection();
 bot.on('message', message => {
   //checks	if message is send by this bot if yes terminate the program
 	if (message.author.bot) return;
-  if (message.author.id == `745169930013638679`) return;
 
   if(message.mentions.has(bot.user)){
     check_master(message)
@@ -122,12 +121,8 @@ bot.on('message', message => {
         .then(r => console.log('channel became busy'))
         .catch(error => console.log(error));
     }
-/*  if(message.channel.name == `⏳busy-help` && message.content.startsWith(`mcstacker`))
-  {
-    message.content.send(`https://mcstacker.net/`);
-  }
-*/
-  if(message.channel.name.startsWith(`🔑`) && message.content.startsWith(prefix)) {
+
+  if(message.channel.name.startsWith(`🔑`) && message.content.startsWith(prefix) && command) {
     message.reply('Commands are disabled in open help channel');
     if(message.guild.id == '618187296474267680')
       message.channel.send(`please use <#626224313002885120> for bot-commands `);
