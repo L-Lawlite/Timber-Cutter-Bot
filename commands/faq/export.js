@@ -1,5 +1,5 @@
 module.exports = {
-	name: 'Export',
+	name: 'export',
 	description: 'Displays instructions on exporting project from Blockbench',
   	aliases: [],
 	execute(message, args) {
