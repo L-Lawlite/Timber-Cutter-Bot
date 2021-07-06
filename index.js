@@ -127,13 +127,13 @@ bot.on('message', message => {
     if(message.channel.name.startsWith(`🔑`) && message.content.startsWith(prefix) && command) {
       message.reply('Commands are disabled in open help channel')
         .then(msg => {
-          msg.delete({timeout : "5000"});
+          msg.delete({timeout : 5000});
         })
         .catch(err => console.log(err));
       if(message.guild.id == '618187296474267680')
         message.channel.send(`please use <#626224313002885120> for bot-commands `)
           .then(msg => {
-            msg.delete({timeout : "5000"});
+            msg.delete({timeout : 5000});
           })
           .catch(err => console.log(err));
       message.delete();
