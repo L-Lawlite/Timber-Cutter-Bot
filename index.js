@@ -41,6 +41,9 @@ const syntaxName = fs.readdirSync('./commands/syntax').filter(file => file.endsW
 bot.editors = new Discord.Collection();
 const editorName = fs.readdirSync('./commands/editor').filter(file => file.endsWith('.js'));
 
+bot.modelCommands = new Discord.Collection();
+const modelCommandName = fs.readdirSync('./commands/model').filter(file => file.endsWith('.js'));
+
 
 //displays the message "This bot is online!" on console log
 bot.on('ready',async () =>{
@@ -88,6 +91,11 @@ for (const file of syntaxName) {
 for (const file of editorName) {
 	const editor = require(`./commands/editor/${file}`);
 	bot.editors.set(editor.name, editor);
+}
+
+for(const file of modelCommandName) {
+  const model = require(`./commands/model/${file}`);
+  bot.modelCommands.set(model.name, model);
 }
 
 //for cooldown operation if needed

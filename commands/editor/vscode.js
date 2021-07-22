@@ -16,7 +16,6 @@ module.exports = {
     **VS Code plugins**
     [Data-pack Helper Plus](https://marketplace.visualstudio.com/items?itemName=SPGoding.datapack-language-server)
     [language-mcfunction](https://marketplace.visualstudio.com/items?itemName=arcensoth.language-mcfunction)
-    [Minecraft GLSL Shaders](https://marketplace.visualstudio.com/items?itemName=strum355.vscode-mc-shader)
     [NBT Editor](https://marketplace.visualstudio.com/items?itemName=Misode.vscode-nbt)
     [MC Datapack](https://marketplace.visualstudio.com/items?itemName=HuJohner.mc-datapack)
 
