@@ -1,5 +1,5 @@
-const Discord = require('discord.js');
-const {color} = require('./model_config.json')
+
+const fs = require('fs');
 
 
 module.exports = {

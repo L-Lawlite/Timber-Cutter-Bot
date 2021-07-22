@@ -1,5 +1,3 @@
-const Discord = require('discord.js');
-const {color} = require('./model_config.json')
 
 
 module.exports = {
