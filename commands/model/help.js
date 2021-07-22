@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 const {color} = require('./model_config.json')
+const {prefix} = require(`../../config.json`)
 
 
 module.exports = {
