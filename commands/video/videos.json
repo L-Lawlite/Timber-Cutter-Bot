@@ -33,9 +33,8 @@
   },
   {
     "name":["raycasting","raycast","rct"],
-    "description":"Raycasting tutorial by Cloud Wolf!",
-    "url":"https://youtu.be/fGlJpli5cYc",
-    "url2":"https://youtu.be/ASVpGeLf_HU"
+    "description":"Raycasting tutorial by Timber Forge!",
+    "url":"https://www.youtube.com/watch?v=EgJKlocbTCg"
   },
   {
     "name":["unicode"],
@@ -108,6 +107,10 @@
     "name":["smooth_rotation","homing_missile","following_entity"],
     "description":"Concept of Smooth Rotation by Cloud Wolf!",
     "url":" https://www.youtube.com/watch?v=xamAY7fpgeQ"
+  },
+  {
+    "name":["jigsaw","jigsaw_block","jgsw"],
+    "description":"How to use Jigsaw Blocks to Generate Random Structures, by Talon!",
+    "url":"https://www.youtube.com/watch?v=5a4DAkWW3JQ"
   }
-  
 ]
