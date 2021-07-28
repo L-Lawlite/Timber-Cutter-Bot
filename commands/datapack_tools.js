@@ -46,7 +46,7 @@ module.exports = {
        },
        {
          name:`Particle Generator`,
-         value:`[Cloud Wolf](https://cloudwolfyt.github.io/pages/gens/particle-plots.html)\n[Gravitowl](https://gravitowl.github.io/plotter.html)`
+         value:`[Cloud Wolf](https://cloudwolfyt.github.io/pages/gens/particle-plots.html)`
        },
        {
 	 name:`Predicate Location Check Generator`,
