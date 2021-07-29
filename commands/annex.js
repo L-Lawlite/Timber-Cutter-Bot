@@ -15,7 +15,8 @@ module.exports = {
             Description = `What is meaning of Annex?
             Add as an extra or subordinate part.
             
-            List of all the Annex:\n`
+            List of all the Annex:
+            `
 
 
 			var annexName = annex.map(annex => annex.name);
@@ -23,7 +24,7 @@ module.exports = {
 			for(var i=0; i<annexName.length; i++){
 				data[i] = `**${annexName[i]}**\n${desc[i]}`;
 			}
-            annexEmbed.setDescription(Description + data.join('\n\n'));
+            annexEmbed.setDescription(Description + '\n' + data.join('\n\n'));
         return message.channel.send(annexEmbed);
     }
 
@@ -33,7 +34,7 @@ module.exports = {
     if(!AnnexCheck)
         return message.reply(`invalid syntax id.\nCorrect Syntax is \`${prefix}annex \[Topic\]\``);
     try {
-        annexCheck.execute(message,args);
+        AnnexCheck.execute(message,args);
     }
    catch (error) {
         console.error(error);
