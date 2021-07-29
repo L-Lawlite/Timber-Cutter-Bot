@@ -10,7 +10,7 @@ module.exports = {
     const annexEmbed = new Discord.MessageEmbed();
     var data = [];
     if(!args.length){
-        syntaxEmbed.setTitle('Annex:');
+        annexEmbed.setTitle('Annex:');
             var Description;
             Description = `What is meaning of Annex?
             Add as an extra or subordinate part.
