@@ -44,6 +44,9 @@ const editorName = fs.readdirSync('./commands/editor').filter(file => file.endsW
 bot.modelCommands = new Discord.Collection();
 const modelCommandName = fs.readdirSync('./commands/model').filter(file => file.endsWith('.js'));
 
+bot.annex = new Discord.Collection();
+const annexName = fs.readdirSync('./commands/annex').filter(file => file.endsWith('.js'));
+
 
 //displays the message "This bot is online!" on console log
 bot.on('ready',async () =>{
@@ -96,6 +99,11 @@ for (const file of editorName) {
 for(const file of modelCommandName) {
   const model = require(`./commands/model/${file}`);
   bot.modelCommands.set(model.name, model);
+}
+
+for (const file of annexName) {
+  const annex = require(`./commands/annex/${file}`);
+  bot.annex.set(annex.name, annex);
 }
 
 //for cooldown operation if needed
