@@ -14,7 +14,16 @@ const bot = new Discord.Client();
 //takes command
 bot.commands = new Discord.Collection();
 
-
+// Mbletz's plead to being heard
+//
+// After trying to use crafty.gg, I got a message saying "verifying your phone" when I opened Discord's app
+// I sighed, as I didn't want to give discord my real phone number (which it didn't accept a google voice number), but entered it anyway
+// Now I came into the app, and then removed the phone number from my account. Then I came back to the same "verifying your phone" page.
+// I put in my phone again, and then I get the error message "This number is being used on another account". I am completely locked out of my discord account
+// According to the internet, this stupid error message has been a thing for at least 2 years. Apparantly my phone number is on "cooldown" for TWO DAYS. I have to wait that long to even TRY to log back in
+// That date came from the community by the way, discord themselves doesn't even know how long of a cooldown your phone number could be on. Their support for this is awful
+// Now I have a new server that I made, and I can't even go on it for 2 days. Thanks a lot discord, for forcing me to put in my phone number, and locking me out when I try to remove it.
+// what's next, me having to put in my driver's license?
 
 Master_id=["228141283175038977","536249458065670154","847688315742060544", "719624459824267295"];
 async function check_master(msg){
