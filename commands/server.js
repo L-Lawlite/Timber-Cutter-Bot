@@ -7,7 +7,7 @@ module.exports = {
 	execute(message, args) {
     const embed = new Discord.MessageEmbed()
     .setColor('#0099ff')
-    .setTitle('**Timber Cutter Official Sevrer!**')
+    .setTitle('**Timber Cutter Official Server!**')
     .setDescription('[Click Here!](https://discord.gg/PW2cjm6NsP)');
     message.channel.send(embed);
 	},
