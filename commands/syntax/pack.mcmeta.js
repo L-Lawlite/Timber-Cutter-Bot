@@ -22,7 +22,7 @@ module.exports = {
     5 for 1.15
     6 for 1.16
     7 for 1.17
-
+    8 for 1.18
     ⁽²⁾: any string
     `)
     return message.channel.send(embed);
