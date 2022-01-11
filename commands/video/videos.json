@@ -112,6 +112,11 @@
     "name":["jigsaw","jigsaw_block","jgsw"],
     "description":"How to use Jigsaw Blocks to Generate Random Structures, by Talon!",
     "url":"https://www.youtube.com/watch?v=5a4DAkWW3JQ"
+  },
+  {
+    "name":["optimize","opt"],
+    "description":"Optimization tips by TheMoneyRaider!",
+    "url":"https://youtu.be/R9m0XGgFoSY"
   }
   
 ]
