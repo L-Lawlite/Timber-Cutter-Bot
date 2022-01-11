@@ -3,7 +3,7 @@ const Discord = require('discord.js');
 module.exports = {
 	name: 'datapack',
 	aliases: ['dpc'],
-	description: 'Shows Datapack Structure for 1.17',
+	description: 'Shows Datapack Structure for 1.18',
 	execute(message, args) {
 		const embed = new Discord.MessageEmbed()
 			.setColor('#0099ff')
