@@ -32,3 +32,4 @@ execute as @a[tag=<your tag>] at @s run function namespace:say_hi
       "example": true
  }
  ```
+**The ` character is under the esc key on most computers.**
