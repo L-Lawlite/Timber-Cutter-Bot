@@ -7,7 +7,7 @@
   {
     "name":["troubleshoot","t"],
     "description":"How to troubleshoot datapack on your own by Timber Forge!",
-    "url":"https://www.youtube.com/watch?v=L79L2qaH3Mw"
+    "url":"https://youtu.be/L79L2qaH3Mw"
   },
   {
     "name":["custom_mob","custom_mobs"],
@@ -22,7 +22,7 @@
   {
     "name":["custom_crafter","floor_crafting","dispenser_crafting"],
     "description":"Custom item crafting using many methods by TheFedora#5666 and Timber Forge",
-    "url":"https://www.youtube.com/watch?v=9DkPcQf2uek",
+    "url":"https://youtu.be/9DkPcQf2uek",
     "url2":"https://youtu.be/0Qm_YWSdUyE"
   },
   {
@@ -34,7 +34,7 @@
   {
     "name":["raycasting","raycast","rct"],
     "description":"Raycasting tutorial by Timber Forge!",
-    "url":"https://www.youtube.com/watch?v=EgJKlocbTCg"
+    "url":"https://youtu.be/EgJKlocbTCg"
   },
   {
     "name":["unicode"],
@@ -49,7 +49,7 @@
   {
     "name":["directional_motion","entity_motion","dm"],
     "description":"Directional Motion Tutorial by Nopename and Timber Forge!",
-    "url":"https://www.youtube.com/watch?v=Df75vdRs7y4&t=259s",
+    "url":"https://youtu.be/Df75vdRs7y4",
     "url2":"https://youtu.be/XUAHvhFjaes"
   },
   {
@@ -75,7 +75,7 @@
   {
     "name":["advancement"],
     "description":"Advancement Tutorial by BronGhast14!",
-    "url":"https://www.youtube.com/watch?v=JHVAiAoQGeo"
+    "url":"https://youtu.be/JHVAiAoQGeo"
   },
   {
     "name":["command","commands","cmd"],
@@ -106,12 +106,12 @@
   {
     "name":["smooth_rotation","homing_missile","following_entity"],
     "description":"Concept of Smooth Rotation by Cloud Wolf!",
-    "url":" https://www.youtube.com/watch?v=xamAY7fpgeQ"
+    "url":"https://youtu.be/xamAY7fpgeQ"
   },
   {
     "name":["jigsaw","jigsaw_block","jgsw"],
     "description":"How to use Jigsaw Blocks to Generate Random Structures, by Talon!",
-    "url":"https://www.youtube.com/watch?v=5a4DAkWW3JQ"
+    "url":"https://youtu.be/5a4DAkWW3JQ"
   },
   {
     "name":["optimize","opt"],
