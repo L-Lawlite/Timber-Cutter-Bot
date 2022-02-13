@@ -51,6 +51,10 @@ module.exports = {
        {
 	 name:`Predicate Location Check Generator`,
 	 value:`[Location Check Predicate](https://weaversong.github.io/) made by WeaverSong#7358`
+       },
+       {
+	 name:`JMC, Javascript-Like Minecraft Functions`,
+         value:`[Compiler for JavaScript inspired minecraft functions](https://wingedseal.github.io/docs.jmc/) made by WingedSeal#0795`
        }
 
      );
