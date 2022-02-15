@@ -55,6 +55,10 @@ module.exports = {
        {
 	 name:`JMC, Javascript-Like Minecraft Functions`,
          value:`[Compiler for JavaScript inspired minecraft functions](https://wingedseal.github.io/docs.jmc/) made by WingedSeal#0795`
+       },
+       {
+	 name:`FancyPants, 1.17 shader for custom armor textures`
+	 value:`[Shader to make custom armor textures in vanilla minecraft](https://github.com/Ancientkingg/fancyPants) made by Ancientkingg#0420`
        }
 
      );
