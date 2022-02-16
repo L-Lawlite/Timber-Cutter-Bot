@@ -37,7 +37,7 @@ module.exports = {
          value:`[Predicate Generator](https://misode.github.io/predicate/)`
        },
        {
-         name:`Advancemen Generator`,
+         name:`Advancement Generator`,
          value:`[Advancement Generator](https://misode.github.io/advancement/)`
        },
        {
