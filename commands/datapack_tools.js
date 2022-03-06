@@ -59,7 +59,10 @@ module.exports = {
        {
 	 name:`FancyPants, 1.17 shader for custom armor textures`,
 	 value:`[Shader to make custom armor textures in vanilla minecraft](https://github.com/Ancientkingg/fancyPants) made by Ancientkingg#0420`
-       }
+       },
+       {
+	 name:`Mitochondria Online, Pack Merger`,
+         value:`[Online tool to automatically merge datapacks or resourcepacks, to reduce imcompatibility](https://mito.thenuclearnexus.live) made by TheNuclearNexus#8255`
 
      );
 
