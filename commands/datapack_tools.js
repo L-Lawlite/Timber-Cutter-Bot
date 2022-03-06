@@ -63,7 +63,7 @@ module.exports = {
        {
 	 name:`Mitochondria Online, Pack Merger`,
          value:`[Online tool to automatically merge datapacks or resourcepacks, to reduce imcompatibility](https://mito.thenuclearnexus.live) made by TheNuclearNexus#8255`
-
+       }
      );
 
     message.channel.send(embed);
