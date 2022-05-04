@@ -46,7 +46,12 @@ module.exports = {
     For more details [click here!](https://minecraft.fandom.com/wiki/Commands#Relative_world_coordinates:_Tilde_notation) 
     `);
 
-    message.channel.send(embed1);
-    message.channel.send(embed2);
+    try{
+      message.channel.send(embed1);
+      message.channel.send(embed2);
+    }
+    catch(err) {
+      console.log(err)
+    }
 	},
 };
